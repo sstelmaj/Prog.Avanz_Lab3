@@ -16,6 +16,9 @@
 Categoria::Categoria() {
 }
 
+string Categoria::getNombre(){
+    return this->nombre;
+}
 Categoria::Categoria(const Categoria& orig) {
 }
 

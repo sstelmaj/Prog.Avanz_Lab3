@@ -13,34 +13,38 @@
 
 #include <cstdlib>
 #include "CU1.h"
-
+#include "CU4.h"
+#include <iostream>
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    
-    AltaDeUsuario();
-    AltaDeUsuario();
-    AltaDeUsuario();
-    
-    
-    
-    //int opcion;
     /*
+    AltaDeUsuario();
+    AltaDeUsuario();
+    AltaDeUsuario();*/
+    
+    
+    int opcion;
+    
+    
     do {
         system("clear");
+        cout<<"Opcion: "
+                "1.Alta de usuario\n"
+                "2.PublicarVideoJuego\n";
         cin>>opcion;
         switch (opcion) {
             case 1:
             {
-                
+                AltaDeUsuario();
                 break;
             }
             case 2:
             {
-
+                PublicarVideoJuego();
                 break;
             }
             case 3:
@@ -64,8 +68,10 @@ int main(int argc, char** argv) {
                     break;
             }
         }
+        cout<<"0 para salir";
+        cin>>opcion;
     } while (opcion != 0);
-    */
+    
 
     return 0;
 }

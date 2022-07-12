@@ -36,6 +36,7 @@
         <itemPath>Controlador_Autenticacion.h</itemPath>
         <itemPath>Controlador_Desarrollador.h</itemPath>
         <itemPath>Controlador_Jugador.h</itemPath>
+        <itemPath>Servicio_Videojuego.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="DataType" projectFiles="true">
         <itemPath>DataComentario.h</itemPath>
@@ -50,6 +51,7 @@
       </logicalFolder>
       <logicalFolder name="f7" displayName="DSS" projectFiles="true">
         <itemPath>CU1.h</itemPath>
+        <itemPath>CU4.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
         <itemPath>Fabrica.h</itemPath>
@@ -98,6 +100,7 @@
         <itemPath>Controlador_Autenticacion.cpp</itemPath>
         <itemPath>Controlador_Desarrollador.cpp</itemPath>
         <itemPath>Controlador_Jugador.cpp</itemPath>
+        <itemPath>Servicio_Videojuego.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="DataType" projectFiles="true">
         <itemPath>DataComentario.cpp</itemPath>
@@ -112,6 +115,7 @@
       </logicalFolder>
       <logicalFolder name="f4" displayName="DSS" projectFiles="true">
         <itemPath>CU1.cpp</itemPath>
+        <itemPath>CU4.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
         <itemPath>Fabrica.cpp</itemPath>
@@ -143,6 +147,10 @@
       <item path="CU1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CU1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU4.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -283,6 +291,10 @@
       <item path="Partida.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Partida_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Suscripcion.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -323,6 +335,10 @@
       </item>
       <item path="CU1.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CU4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU4.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Categoria.h" ex="false" tool="3" flavor2="0">
@@ -462,6 +478,10 @@
       <item path="Partida.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Partida_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Suscripcion.cpp" ex="false" tool="1" flavor2="0">
       </item>

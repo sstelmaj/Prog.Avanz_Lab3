@@ -17,14 +17,26 @@
 #include "Interface_Desarrollador.h"
 
 #include "IDictionary.h"
+#include "Servicio_VideoJuego.h"
 #include "ICollection.h"
+#include "Suscripcion.h"
 
 class ControladorD : public InterfaceD{
 public:
 	ControladorD();
 	ControladorD(const ControladorD &arg);
 	virtual ~ControladorD();
-
+        void IngresarDatosVideojuego(string,string);
+        void AsociarSuscripcion(tiempoValidez,int);
+	void AsociarSuscripcion(int);
+        ICollection* ObtenerCategoriasGeneros();
+        void SeleccionarCategoriaG(string);
+        ICollection* ObtenerCategoriasPlataformas();
+	void SeleccionarCategoriaP(string);
+        ICollection* ObtenerCategorias();
+	void SeleccionarCategoria(string);
+        void ConfirmarPublicacion();
+	void CancelarPublicacion();
 	ControladorD* getInstance();
         
 /*
@@ -32,17 +44,6 @@ public:
 	void IngresarDatosCategoria(string,string,TipoCategoria);//Falta tipo categoria
 	void CancelarOperacion();
 	void AgregarCategoria();
-	void IngresarDatosVideojuego(string,string);
-	void AsociarSuscripcion(TiempoValidez,int);
-	void AsociarSuscripcion(int);
-	void ObtenerCategoriasGeneros();//:Set(Genero)
-	void SeleccionarCategoria(Genero);//Falta Genero
-	void ObtenerCategoriasPlataformas();//: Set(Plataformas);
-	void SeleccionarCategoria(Plataforma);
-	void ObtenerCategorias();//:Set(Categoria);
-	void SeleccionarCategoria(Categoria);
-	void ConfirmarPublicacion();
-	void CancelarPublicacion();
 	void ListarJuego();//:Set(String)
 	void SeleccionarVideoJuego(string);
 	void confirmarEliminacion();
@@ -51,9 +52,15 @@ public:
 	void ElegirVideojuego(string);//:Set(DataVideojuegoCU11);
 */
 	
-	
 private:
 	static ControladorD* instance;	
+        ICollection * categorias;
+        string Tnombre;
+        string Tdescripcion;
+        ICollection * Tsuscripcion;
+        ICollection * Tcategorias;
+        Servicio_Videojuego* InServicio;
+        
 };
 
 #endif /* CONTROLADOR_DESARROLLADOR_H */

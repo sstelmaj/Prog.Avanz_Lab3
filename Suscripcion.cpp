@@ -21,4 +21,39 @@ Suscripcion::Suscripcion(const Suscripcion& orig) {
 
 Suscripcion::~Suscripcion() {
 }
+/*----------------------------VITALICEA--------------------------------------------*/
+
+Vitalicea::Vitalicea(){
+}
+
+Vitalicea::Vitalicea(const Vitalicea& orig){
+
+}
+
+Vitalicea::Vitalicea(int _costo){
+    this->costo=_costo;
+}
+
+int Vitalicea::getCosto(){
+    return this->costo;
+}
+
+void Vitalicea::setCosto(int _costo){
+    this->costo=_costo;
+}
+Vitalicea::~Vitalicea(){
+}
+
+/*--------------------------TEMPORAL------------------------------------*/
+Temporal::Temporal(){
+}
+
+Temporal::Temporal(tiempoValidez _tiempo, int _costo){
+    this->periodoValidez=_tiempo;
+    this->costoMensual=_costo;
+}
+
+Temporal::~Temporal(){
+}
+
 
