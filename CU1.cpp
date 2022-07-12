@@ -13,11 +13,10 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-//////////ESTO ES CREACION DE SEBA !!!!!!!!
-=======
-/*esto es creacion de Paulo*/
->>>>>>> 9a8fc9b371cfc785d23665d7d2c89ddacfdcd28e
+
+
+//ESTO ES COMENTARIO DE SEBA
+
 
 void AltaDeUsuario(){
     string mail, contrasenia, empresa;
