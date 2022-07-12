@@ -29,30 +29,26 @@ using namespace std;
 
 class ControladorUsuario : public InterfaceInicioSesion{
 public:
-	ControladorUsuario();
-	ControladorUsuario* getInstance();
+	
+	static ControladorUsuario* getInstance();
 	virtual ~ControladorUsuario();
 	
-
         void IngresarDatosUsuario(DataUsuario*);
         void IngresarNickname(DataJugador);
         void CancelarAltaUsuario();
         void ConfirmarAltaUsuario();
-        void buscarJugador(string);
+        bool buscarJugador(string);
         
         void setDataUsuarioTemporal(DataUsuario*);
-        
         IDictionary* getUsuarios();
-
         
-	/*
-        void RegistrarUsuario();
-	void IniciarSesion(string,string);//:bool;
-	void CancelarSesion();
-	Usuario* getUsuario();
-        */
+        void CancelarSesion();
+        bool IniciarSesion(string,string);
+        
+        void setUsuario(Usuario*);
 
 private:
+        ControladorUsuario();
 	static ControladorUsuario* instance;
 	IDictionary* usuarios; // controladora tiene una coleccion de usuarios
 	Usuario* usu; // un usuario

@@ -18,14 +18,6 @@
 #include "ICollectible.h"
 using namespace std;
 
-typedef enum TipoGenero{
-    ACCION,AVENTURA,ESTRATEGIA,DEPORTE
-}TipoG;
-
-typedef enum TipoPlataforma{
-    PC,PS4,PS5,XBOXX,XBOXONE,SWITCH
-}TipoP;
-
 typedef enum TipoCategoria{
     GENERO,PLATAFORMA ,OTROS
 }TipoCategoria;
@@ -52,10 +44,9 @@ public:
     Genero(const Genero& orig);
     virtual ~Genero();
     
-    TipoG getTipoGenero();                            
-    void setTipoGenero(TipoG);                         
+                      
 private:
-    TipoG tipoGenero;                               
+                             
 };
 //------------------------------------------------------------------------------
 class Plataforma : public Categoria {
@@ -64,9 +55,8 @@ public:
     Plataforma(const Plataforma& orig);
     virtual ~Plataforma();
     
-    TipoP getTipoPlataforma();                         
-    void setTipoPlataforma(TipoP);
+
 private:
-    TipoP tipoPlataforma;
+
 };
 #endif /* CATEGORIA_H */

@@ -22,14 +22,18 @@ using namespace std;
 
 class InterfaceInicioSesion {
 public:
-/*
-	virtual void IniciarSesion(string,string)=0;//:bool;
+    
+        virtual void IngresarDatosUsuario(DataUsuario*)=0;
+        virtual void IngresarNickname(DataJugador)=0;
+        virtual void CancelarAltaUsuario()=0;
+        virtual void ConfirmarAltaUsuario()=0;
+        virtual bool buscarJugador(string)=0;
+        
+        virtual bool IniciarSesion(string,string)=0;
 	virtual void CancelarSesion()=0;
-	virtual void RegistrarUsuario()=0;
-	virtual void IngresarDatosUsuario(DataUsuario)=0;//falta el datatype
-	virtual void CancelarAltaUsuario()=0;
-	virtual void IngresarNickname(DataJugador)=0;//falta el datatype
-	virtual void ConfirmarAltaUsuario()=0;
+	//virtual void RegistrarUsuario()=0;
+/*
+	
 	virtual Usuario* getUsuario()=0;
 */
   

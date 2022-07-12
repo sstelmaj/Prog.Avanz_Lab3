@@ -42,11 +42,12 @@ private:
 class Vitalicea : public Suscripcion {
 public:
     Vitalicea();
+    Vitalicea(int);
     Vitalicea(const Vitalicea& orig);
     virtual ~Vitalicea();
     
     int getCosto();
-    void setCosto();
+    void setCosto(int);
 private:
     int costo;
 };
@@ -54,6 +55,7 @@ private:
 class Temporal : public Suscripcion {
 public:
     Temporal();
+    Temporal(tiempoValidez,int);
     Temporal(const Temporal& orig);
     virtual ~Temporal();
     
@@ -69,4 +71,3 @@ private:
     bool cancelada;
 };
 #endif /* SUSCRIPCION_H */
-

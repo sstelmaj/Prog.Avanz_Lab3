@@ -26,9 +26,9 @@ using namespace std;
 
 class ControladorJugador :public InterfaceJugador{
 public:
-	ControladorJugador();
-	ControladorJugador* getInstance();
-    virtual ~ControladorJugador();	
+	
+	static ControladorJugador* getInstance();
+        virtual ~ControladorJugador();	
 	
     /*
 	IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
@@ -68,6 +68,7 @@ public:
 	
 	
 private:
+        ControladorJugador();
 	static ControladorJugador* instance;
 	IDictionary* usuSeleccionados;
 	//IDictionary* jugador;

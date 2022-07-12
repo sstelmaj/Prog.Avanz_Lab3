@@ -30,7 +30,7 @@ public:
     Partida(const Partida& orig);
     virtual ~Partida();
     
-    Videojuego getVideojuego();
+    Videojuego* getVideojuego();
     bool getFinalizada();
     int getIdPartida();
     DtDate* getFecha();
@@ -71,7 +71,6 @@ private:
     bool enVivo;
     IDictionary* jugadores; // El mutlijugador tiene una coleccion de jugadores que participan en la partida
     IDictionary* comentarios; // El mutlijugador tiene una coleccion de comentarios que hizo los jugadores
-    
 };
 //------------------------------------------------------------------------------
 class Individual : public Partida {
