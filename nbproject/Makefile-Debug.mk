@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CU1.o \
+	${OBJECTDIR}/CU3.o \
 	${OBJECTDIR}/Categoria.o \
 	${OBJECTDIR}/Comentario.o \
 	${OBJECTDIR}/Controlador_Autenticacion.o \
@@ -67,7 +68,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Nodo.o \
 	${OBJECTDIR}/NodoDicc.o \
 	${OBJECTDIR}/Par.o \
-	${OBJECTDIR}/Partida.o \
 	${OBJECTDIR}/Partida_1.o \
 	${OBJECTDIR}/Suscripcion.o \
 	${OBJECTDIR}/Usuario.o \
@@ -103,6 +103,11 @@ ${OBJECTDIR}/CU1.o: CU1.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU1.o CU1.cpp
+
+${OBJECTDIR}/CU3.o: CU3.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU3.o CU3.cpp
 
 ${OBJECTDIR}/Categoria.o: Categoria.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -258,11 +263,6 @@ ${OBJECTDIR}/Par.o: Par.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Par.o Par.cpp
-
-${OBJECTDIR}/Partida.o: Partida.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Partida.o Partida.cpp
 
 ${OBJECTDIR}/Partida_1.o: Partida_1.cpp
 	${MKDIR} -p ${OBJECTDIR}

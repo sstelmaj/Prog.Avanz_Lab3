@@ -12,6 +12,8 @@
  */
 
 #ifndef INTERFACE_DESARROLLADOR_H
+#include "Categoria.h"
+#include "ICollection.h"
 #define INTERFACE_DESARROLLADOR_H
 
 #include <string>
@@ -19,11 +21,11 @@ using namespace std;
 
 class InterfaceD {
 public:
+        virtual ICollection* ListarCategorias()=0;
+        virtual void ConfirmarCategoria(Categoria*)=0;
+        virtual void CancelarOperacion()=0;
+        virtual void IngresarDatosCategoria(string,string,TipoCategoria)=0;
     /*
-	virtual void ListarCategorias();//:Set(String)
-	virtual void IngresarDatosCategoria(string,string,TipoCategoria);
-	virtual void CancelarOperacion();
-	virtual void AgregarCategoria();
 	virtual void IngresarDatosVideojuego(string,string);
 	virtual void AsociarSuscripcion(DtTiempoValidez,int);
 	virtual void AsociarSuscripcion(int);
@@ -42,8 +44,7 @@ public:
 	virtual void ListarTodosVideojuegos();//:Set(string);
 	virtual void ElegirVideojuego(string);//:Set(DataVideojuegoCU11);
     */
-    
-
+        
 private:
 };
 

@@ -29,8 +29,8 @@ using namespace std;
 
 class ControladorUsuario : public InterfaceInicioSesion{
 public:
-	ControladorUsuario();
-	ControladorUsuario* getInstance();
+	
+	static ControladorUsuario* getInstance();
 	virtual ~ControladorUsuario();
 	
 
@@ -38,12 +38,11 @@ public:
         void IngresarNickname(DataJugador);
         void CancelarAltaUsuario();
         void ConfirmarAltaUsuario();
-        void buscarJugador(string);
+        bool buscarJugador(string);
         
         void setDataUsuarioTemporal(DataUsuario*);
-        
         IDictionary* getUsuarios();
-
+        
         
 	/*
         void RegistrarUsuario();
@@ -53,6 +52,7 @@ public:
         */
 
 private:
+        ControladorUsuario();
 	static ControladorUsuario* instance;
 	IDictionary* usuarios; // controladora tiene una coleccion de usuarios
 	Usuario* usu; // un usuario

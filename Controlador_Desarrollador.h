@@ -18,20 +18,33 @@
 
 #include "IDictionary.h"
 #include "ICollection.h"
+#include "Usuario.h"
+#include "DataUsuario.h"
+#include <string>
+#include "ICollection.h"
+#include "ICollectible.h"
+#include "Lista.h"
+#include "IDictionary.h"
+#include "KeyString.h"
+#include "ListaDicc.h"
+#include "Categoria.h"
 
 class ControladorD : public InterfaceD{
 public:
-	ControladorD();
+	
 	ControladorD(const ControladorD &arg);
 	virtual ~ControladorD();
 
-	ControladorD* getInstance();
+	static ControladorD* getInstance();
+        
+        void ConfirmarCategoria(Categoria*); // se cambió, antes era "AgregarCategoria()"
+        void IngresarDatosCategoria(string,string,TipoCategoria);//Falta tipo categoria
+        void CancelarOperacion();
+        ICollection* ListarCategorias();
         
 /*
-	void ListarCategorias();//:Set(String)
-	void IngresarDatosCategoria(string,string,TipoCategoria);//Falta tipo categoria
-	void CancelarOperacion();
-	void AgregarCategoria();
+
+
 	void IngresarDatosVideojuego(string,string);
 	void AsociarSuscripcion(TiempoValidez,int);
 	void AsociarSuscripcion(int);
@@ -53,7 +66,9 @@ public:
 	
 	
 private:
-	static ControladorD* instance;	
+        ControladorD();
+	static ControladorD* instance;
+        ICollection* categorias;
 };
 
 #endif /* CONTROLADOR_DESARROLLADOR_H */

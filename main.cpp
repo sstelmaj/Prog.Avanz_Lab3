@@ -13,6 +13,7 @@
 
 #include <cstdlib>
 #include "CU1.h"
+#include "CU3.h"
 
 using namespace std;
 
@@ -20,10 +21,11 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    fabrica* Fabrica;
     
-    AltaDeUsuario();
-    AltaDeUsuario();
-    AltaDeUsuario();
+   AltaDeUsuario();
+
+   AgregarCategoria();
     
     
     
