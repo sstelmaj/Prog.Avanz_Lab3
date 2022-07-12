@@ -20,32 +20,21 @@ void PublicarVideoJuego(){
     cout<<"Ingrese Descripcion del Juego a Publicar: ";
     cin>>descripcion;
     fabrica->getInterfaceD()->IngresarDatosVideojuego(nombre,descripcion);
-        cout<<"Ingrese Tipo de Suscripcion: "<<endl;
-        cout<<"1.Temporal\n"
-              "2.Vitalicea\n";
-        cin>>opcion;
-        switch(opcion){
-            case 1:
-                do{
-                cout<<"Ingrese Duracion de la suscripcion: "<<endl;
-                cout<<"1.Mensual\n"
-                      "2.Trimestral\n"
-                      "3.Anual\n";
-                cin>>tipo;
-                tiempo=(tiempoValidez)tipo;
-                cout<<"Ingrese costo de la suscripcion";
-                cin>>costo;
-                fabrica->getInterfaceD()->AsociarSuscripcion(tiempo,costo);
-                cout<<"Ingrese 0 para seguir ingresando suscripciones";
-                cin>>opc;
-                }while(opc==0);
-                break;
-            case 2:
-                cout<<"Ingrese costo de la suscripcion";
-                cin>>costo;
-                fabrica->getInterfaceD()->AsociarSuscripcion(costo);
-                break;
-        }
+    cout<<"Ingrese Costo mensual "<<endl;
+    cin>>costo;
+    tiempo=(tiempoValidez)0;
+    fabrica->getInterfaceD()->AsociarSuscripcion(tiempo,costo);
+    cout<<"Ingrese Costo trimestral "<<endl;
+    cin>>costo;
+    tiempo=(tiempoValidez)1;
+    fabrica->getInterfaceD()->AsociarSuscripcion(tiempo,costo);
+    cout<<"Ingrese Costo anual "<<endl;
+    cin>>costo;
+    tiempo=(tiempoValidez)2;
+    fabrica->getInterfaceD()->AsociarSuscripcion(tiempo,costo);
+    cout<<"Ingrese Costo de la suscripcion vitalicea "<<endl;
+    cin>>costo;
+    fabrica->getInterfaceD()->AsociarSuscripcion(costo);
     cout<<"Ingrese categoria de Genero: ";
     categorias=fabrica->getInterfaceD()->ObtenerCategoriasGeneros();
     it = categorias->iterator();
