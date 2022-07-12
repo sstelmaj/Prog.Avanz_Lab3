@@ -10,11 +10,12 @@
  *
  * Created on 23 de junio de 2022, 09:31 AM
  */
-
 #ifndef VIDEOJUEGO_H
 #define VIDEOJUEGO_H
 
 #include <string>
+#include "Suscripcion.h"
+#include "Categoria.h"
 #include "IDictionary.h"
 #include "ICollectible.h"
 #include "ICollection.h"
@@ -24,6 +25,7 @@ using namespace std;
 class Videojuego : public ICollectible {
 public:
     Videojuego();
+    Videojuego(string,string);
     Videojuego(const Videojuego& orig);
     virtual ~Videojuego();
     
@@ -34,8 +36,8 @@ public:
     void setDescripcion(string);
     void setPromedio(int);
     
-    //AsociarSuscripcion(tiempoValidez, int);                   Falta el enum tiempoValidez
-    void AgregarCategoria();
+    void AsociarSuscripcion(ICollection *);
+    void AgregarCategorias(ICollection *);
     ICollection* ListarInformacionVideojuego();
     ICollection* ObtenerSumaHoras();
 private:
@@ -48,4 +50,5 @@ private:
 };
 
 #endif /* VIDEOJUEGO_H */
+
 

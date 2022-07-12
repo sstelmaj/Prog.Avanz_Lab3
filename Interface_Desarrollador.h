@@ -14,6 +14,7 @@
 #ifndef INTERFACE_DESARROLLADOR_H
 #include "Categoria.h"
 #include "ICollection.h"
+#include "Suscripcion.h"
 #define INTERFACE_DESARROLLADOR_H
 
 #include <string>
@@ -25,6 +26,22 @@ public:
         virtual void ConfirmarCategoria(Categoria*)=0;
         virtual void CancelarOperacion()=0;
         virtual void IngresarDatosCategoria(string,string,TipoCategoria)=0;
+        
+        
+        virtual void IngresarDatosVideojuego(string,string)=0;
+        virtual void AsociarSuscripcion(tiempoValidez,int)=0;
+        virtual void AsociarSuscripcion(int)=0;
+        virtual ICollection* ObtenerCategoriasGeneros()=0;
+        virtual void SeleccionarCategoriaG(string)=0;
+        virtual ICollection* ObtenerCategoriasPlataformas()=0;
+        virtual void SeleccionarCategoriaP(string)=0;
+        virtual ICollection* ObtenerCategorias()=0;
+        virtual void SeleccionarCategoria(string)=0;
+        virtual void ConfirmarPublicacion()=0;
+        virtual void CancelarPublicacion()=0;
+        
+        
+        
     /*
 	virtual void IngresarDatosVideojuego(string,string);
 	virtual void AsociarSuscripcion(DtTiempoValidez,int);

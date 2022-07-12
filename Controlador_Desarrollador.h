@@ -28,6 +28,8 @@
 #include "KeyString.h"
 #include "ListaDicc.h"
 #include "Categoria.h"
+#include "Suscripcion.h"
+#include "Servicio_Videojuego.h"
 
 class ControladorD : public InterfaceD{
 public:
@@ -37,11 +39,24 @@ public:
 
 	static ControladorD* getInstance();
         
+        //caso de uso 3
         void ConfirmarCategoria(Categoria*); // se cambió, antes era "AgregarCategoria()"
         void IngresarDatosCategoria(string,string,TipoCategoria);//Falta tipo categoria
         void CancelarOperacion();
         ICollection* ListarCategorias();
         
+        //caso de uso 4
+        void IngresarDatosVideojuego(string,string);
+        void AsociarSuscripcion(tiempoValidez,int);
+	void AsociarSuscripcion(int);
+        ICollection* ObtenerCategoriasGeneros();
+        void SeleccionarCategoriaG(string);
+        ICollection* ObtenerCategoriasPlataformas();
+	void SeleccionarCategoriaP(string);
+        ICollection* ObtenerCategorias();
+	void SeleccionarCategoria(string);
+        void ConfirmarPublicacion();
+	void CancelarPublicacion();
 /*
 
 
@@ -69,6 +84,12 @@ private:
         ControladorD();
 	static ControladorD* instance;
         ICollection* categorias;
+       
+        string Tnombre;
+        string Tdescripcion;
+        ICollection * Tsuscripcion;
+        ICollection * Tcategorias;
+        Servicio_Videojuego* InServicio;
 };
 
 #endif /* CONTROLADOR_DESARROLLADOR_H */

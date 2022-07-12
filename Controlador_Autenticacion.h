@@ -33,7 +33,6 @@ public:
 	static ControladorUsuario* getInstance();
 	virtual ~ControladorUsuario();
 	
-
         void IngresarDatosUsuario(DataUsuario*);
         void IngresarNickname(DataJugador);
         void CancelarAltaUsuario();
@@ -43,13 +42,10 @@ public:
         void setDataUsuarioTemporal(DataUsuario*);
         IDictionary* getUsuarios();
         
+        void CancelarSesion();
+        bool IniciarSesion(string,string);
         
-	/*
-        void RegistrarUsuario();
-	void IniciarSesion(string,string);//:bool;
-	void CancelarSesion();
-	Usuario* getUsuario();
-        */
+        void setUsuario(Usuario*);
 
 private:
         ControladorUsuario();

@@ -36,7 +36,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CU1.o \
+	${OBJECTDIR}/CU2.o \
 	${OBJECTDIR}/CU3.o \
+	${OBJECTDIR}/CU4.o \
 	${OBJECTDIR}/Categoria.o \
 	${OBJECTDIR}/Comentario.o \
 	${OBJECTDIR}/Controlador_Autenticacion.o \
@@ -69,6 +71,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/NodoDicc.o \
 	${OBJECTDIR}/Par.o \
 	${OBJECTDIR}/Partida_1.o \
+	${OBJECTDIR}/Servicio_Videojuego.o \
 	${OBJECTDIR}/Suscripcion.o \
 	${OBJECTDIR}/Usuario.o \
 	${OBJECTDIR}/Videojuego.o \
@@ -104,10 +107,20 @@ ${OBJECTDIR}/CU1.o: CU1.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU1.o CU1.cpp
 
+${OBJECTDIR}/CU2.o: CU2.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU2.o CU2.cpp
+
 ${OBJECTDIR}/CU3.o: CU3.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU3.o CU3.cpp
+
+${OBJECTDIR}/CU4.o: CU4.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU4.o CU4.cpp
 
 ${OBJECTDIR}/Categoria.o: Categoria.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -268,6 +281,11 @@ ${OBJECTDIR}/Partida_1.o: Partida_1.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Partida_1.o Partida_1.cpp
+
+${OBJECTDIR}/Servicio_Videojuego.o: Servicio_Videojuego.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Servicio_Videojuego.o Servicio_Videojuego.cpp
 
 ${OBJECTDIR}/Suscripcion.o: Suscripcion.cpp
 	${MKDIR} -p ${OBJECTDIR}

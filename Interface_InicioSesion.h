@@ -28,10 +28,12 @@ public:
         virtual void CancelarAltaUsuario()=0;
         virtual void ConfirmarAltaUsuario()=0;
         virtual bool buscarJugador(string)=0;
-/*
-	virtual void IniciarSesion(string,string)=0;//:bool;
+        
+        virtual bool IniciarSesion(string,string)=0;
 	virtual void CancelarSesion()=0;
-	virtual void RegistrarUsuario()=0;
+	//virtual void RegistrarUsuario()=0;
+/*
+	
 	virtual Usuario* getUsuario()=0;
 */
   

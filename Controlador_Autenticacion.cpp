@@ -73,3 +73,24 @@ bool ControladorUsuario::buscarJugador(string nickname){
     }
     return false;
 }
+
+
+bool ControladorUsuario::IniciarSesion(string mail,string contrasenia){
+    KeyString* key = new KeyString(mail);
+    if(usuarios->member(key)){
+        Usuario* u = (Usuario*)(usuarios->find(key));
+        if(u->getContrasenia()==contrasenia){
+            this->setUsuario(u);
+             return true;
+        }
+    }
+    return false;
+}
+
+void ControladorUsuario::setUsuario(Usuario* u){
+    this->usu = u;
+}
+
+void ControladorUsuario::CancelarSesion(){
+    this->usu = NULL;
+}
