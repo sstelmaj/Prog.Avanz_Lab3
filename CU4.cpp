@@ -3,11 +3,13 @@
 #include "Controlador_Desarrollador.h"
 #include "Suscripcion.h"
 #include "Categoria.h"
+#include "Fabrica.h"
 
 using namespace std;
 ControladorD* controladora=new ControladorD();
 
 void PublicarVideoJuego(){
+    fabrica * fabrica;
     string nombre,descripcion,cat;
     int opcion,costo,tipo,opc;
     tiempoValidez tiempo;
@@ -18,7 +20,7 @@ void PublicarVideoJuego(){
     cin>>nombre;
     cout<<"Ingrese Descripcion del Juego a Publicar: ";
     cin>>descripcion;
-    controladora->IngresarDatosVideojuego(nombre,descripcion);
+    fabrica->getInterfaceD()->IngresarDatosVideojuego(nombre,descripcion);
         cout<<"Ingrese Tipo de Suscripcion: "<<endl;
         cout<<"1.Temporal\n"
               "2.Vitalicea\n";
@@ -34,7 +36,7 @@ void PublicarVideoJuego(){
                 tiempo=(tiempoValidez)tipo;
                 cout<<"Ingrese costo de la suscripcion";
                 cin>>costo;
-                controladora->AsociarSuscripcion(tiempo,costo);
+                fabrica->getInterfaceD()->AsociarSuscripcion(tiempo,costo);
                 cout<<"Ingrese 0 para seguir ingresando suscripciones";
                 cin>>opc;
                 }while(opc==0);
@@ -42,11 +44,11 @@ void PublicarVideoJuego(){
             case 2:
                 cout<<"Ingrese costo de la suscripcion";
                 cin>>costo;
-                controladora->AsociarSuscripcion(costo);
+                fabrica->getInterfaceD()->AsociarSuscripcion(costo);
                 break;
         }
     cout<<"Ingrese categoria de Genero: ";
-    categorias=controladora->ObtenerCategoriasGeneros();
+    categorias=fabrica->getInterfaceD()->ObtenerCategoriasGeneros();
     it = categorias->iterator();
     
     while(it->hasNext()){
@@ -55,12 +57,12 @@ void PublicarVideoJuego(){
         it->next();
     }
     cin>>cat;
-    controladora->SeleccionarCategoriaG(cat);
+    fabrica->getInterfaceD()->SeleccionarCategoriaG(cat);
     delete categorias;
     delete it;
     
     cout<<"Ingrese categoria de Plataforma: ";
-    categorias=controladora->ObtenerCategoriasPlataformas();
+    categorias=fabrica->getInterfaceD()->ObtenerCategoriasPlataformas();
     it = categorias->iterator();
     
     while(it->hasNext()){
@@ -69,7 +71,7 @@ void PublicarVideoJuego(){
         it->next();
     }
     cin>>cat;
-    controladora->SeleccionarCategoriaP(cat);
+    fabrica->getInterfaceD()->SeleccionarCategoriaP(cat);
     delete categorias;
     delete it;
     
@@ -77,7 +79,7 @@ void PublicarVideoJuego(){
     cin>>opcion;
     while(opcion==0){
         cout<<"Ingrese Categoria: "<<endl;
-        categorias=controladora->ObtenerCategorias();
+        categorias=fabrica->getInterfaceD()->ObtenerCategorias();
         it = categorias->iterator();
     
         while(it->hasNext()){
@@ -86,7 +88,7 @@ void PublicarVideoJuego(){
             it->next();
         }
         cin>>cat;
-        controladora->SeleccionarCategoria(cat);
+        fabrica->getInterfaceD()->SeleccionarCategoria(cat);
         cout<<"Ingresar 0 para agregar mas categorias";
         cin>>opcion;
     }
@@ -95,10 +97,10 @@ void PublicarVideoJuego(){
     cin>>opcion;
     switch(opcion){
         case 1:
-            controladora->ConfirmarPublicacion();
+            fabrica->getInterfaceD()->ConfirmarPublicacion();
             break;
         case 2:
-            controladora->CancelarPublicacion();
+            fabrica->getInterfaceD()->CancelarPublicacion();
             break;
     }
 }

@@ -15,26 +15,31 @@
 #define INTERFACE_DESARROLLADOR_H
 
 #include <string>
+#include "Suscripcion.h"
+#include "IDictionary.h"
+#include "Servicio_VideoJuego.h"
+#include "ICollection.h"
 using namespace std;
 
 class InterfaceD {
 public:
+    virtual void IngresarDatosVideojuego(string,string)=0;
+    virtual void AsociarSuscripcion(tiempoValidez,int)=0;
+    virtual void AsociarSuscripcion(int)=0;
+    virtual ICollection* ObtenerCategoriasGeneros()=0;
+    virtual void SeleccionarCategoriaG(string)=0;
+    virtual ICollection* ObtenerCategoriasPlataformas()=0;
+    virtual void SeleccionarCategoriaP(string)=0;
+    virtual ICollection* ObtenerCategorias()=0;
+    virtual void SeleccionarCategoria(string)=0;
+    virtual void ConfirmarPublicacion()=0;
+    virtual void CancelarPublicacion()=0;
     /*
 	virtual void ListarCategorias();//:Set(String)
 	virtual void IngresarDatosCategoria(string,string,TipoCategoria);
 	virtual void CancelarOperacion();
 	virtual void AgregarCategoria();
-	virtual void IngresarDatosVideojuego(string,string);
 	virtual void AsociarSuscripcion(DtTiempoValidez,int);
-	virtual void AsociarSuscripcion(int);
-	virtual void ObtenerCategoriasGeneros();//:Set(Genero)
-	virtual void SeleccionarCategoria(Genero);
-	virtual void ObtenerCategoriasPlataformas();//: Set(Plataformas);
-	virtual void SeleccionarCategoria(Plataforma);
-	virtual void ObtenerCategorias();//:Set(Categoria);
-	virtual void SeleccionarCategoria(Categoria);
-	virtual void ConfirmarPublicacion();
-	virtual void CancelarPublicacion();
 	virtual void ListarJuego();//:Set(String)
 	virtual void SeleccionarVideoJuego(string);
 	virtual void confirmarEliminacion();

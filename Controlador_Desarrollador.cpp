@@ -131,7 +131,7 @@ void ControladorD::ConfirmarPublicacion(){
     
     
     
-   /* 
+   
     IDictionary* juegos;
     juegos=InServicio->getInstance()->mostrar();
     Videojuego* juego;
@@ -141,7 +141,7 @@ void ControladorD::ConfirmarPublicacion(){
         cout<<juego->getNombre()<<endl;
         it->next();
     }
-    delete it;*/
+    delete it;
 }
 
 void ControladorD::CancelarPublicacion(){

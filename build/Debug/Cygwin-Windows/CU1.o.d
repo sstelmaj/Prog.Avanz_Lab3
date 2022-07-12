@@ -3,10 +3,9 @@ build/Debug/Cygwin-Windows/CU1.o: CU1.cpp Usuario.h IDictionary.h \
  Controlador_Autenticacion.h Interface_InicioSesion.h DataUsuario.h \
  Lista.h Nodo.h ListaIterator.h KeyString.h ListaDicc.h NodoDicc.h Par.h \
  ListDiccIterator.h ListDiccIteratorObj.h ListDiccIteratorKey.h \
- Controlador_Desarrollador.h Interface_Desarrollador.h \
- Servicio_VideoJuego.h Videojuego.h Suscripcion.h Categoria.h \
- DataVideojuegoCU11.h Controlador_Jugador.h Interface_Jugador.h Fabrica.h \
- CU1.h
+ Controlador_Desarrollador.h Interface_Desarrollador.h Suscripcion.h \
+ Servicio_VideoJuego.h Videojuego.h Categoria.h DataVideojuegoCU11.h \
+ Controlador_Jugador.h Interface_Jugador.h Fabrica.h CU1.h
 Usuario.h:
 IDictionary.h:
 ICollectible.h:
@@ -28,9 +27,9 @@ ListDiccIteratorObj.h:
 ListDiccIteratorKey.h:
 Controlador_Desarrollador.h:
 Interface_Desarrollador.h:
+Suscripcion.h:
 Servicio_VideoJuego.h:
 Videojuego.h:
-Suscripcion.h:
 Categoria.h:
 DataVideojuegoCU11.h:
 Controlador_Jugador.h:
