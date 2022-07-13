@@ -16,19 +16,20 @@ ControladorJugador::ControladorJugador() {
     this->cantPartidas=0;
 }
 
-void ControladorJugador::ListarVideoJuegosJugador(){
+bool ControladorJugador::ListarVideoJuegosJugador(){
     IDictionary* listajuegos=new ListDicc();
     Jugador* jugador=(Jugador*)this->controladorusuario->getInstance()->getUsuario();
     listajuegos=jugador->ListarVideojuegosSuscriptos();
-     cout<<"1"<<endl;
+    if(!listajuegos){
+        cout<<"No tiene suscripciones";
+        return false;
+    }
     IIterator * it = listajuegos->getIteratorObj();
-    cout<<"2"<<endl;
     while (it->hasNext()) {
         Videojuego* actual=(Videojuego*)it->getCurrent();
         cout<<actual->getNombre()<<endl;
         it->next();
     }
-    cout<<"3"<<endl;
     delete it;
 }
 

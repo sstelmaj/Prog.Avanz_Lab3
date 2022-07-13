@@ -31,7 +31,7 @@ class ControladorJugador :public InterfaceJugador{
 public:
 	
 	static ControladorJugador* getInstance();
-        void ListarVideoJuegosJugador();
+        bool ListarVideoJuegosJugador();
         void IngresarNombreVideoJuego(string);
         ICollection* HistorialPartidasIndividualesFinalizadas();//:set(DatapartidasCU7);
         void ContinuarPartida(int);

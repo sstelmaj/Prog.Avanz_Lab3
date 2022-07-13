@@ -24,7 +24,9 @@ void iniciarPartida(){
     Jugador* unir=NULL;
     Partida* nueva=NULL;
     Jugador* j =new Jugador();
-    fabrica->getInterfacejugador()->ListarVideoJuegosJugador();
+    if(fabrica->getInterfacejugador()->ListarVideoJuegosJugador()==false){
+        return;
+    }
     cout<<"Ingrese nombre de juego para iniciar partida: ";
     cin>>nombre;
     fabrica->getInstance()->getInterfacejugador()->IngresarNombreVideoJuego(nombre);

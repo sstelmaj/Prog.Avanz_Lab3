@@ -24,7 +24,7 @@ using namespace std;
 class InterfaceJugador {
 public:
     
-    virtual void ListarVideoJuegosJugador()=0;
+    virtual bool ListarVideoJuegosJugador()=0;
     virtual void IngresarNombreVideoJuego(string)=0;
     virtual ICollection* HistorialPartidasIndividualesFinalizadas()=0;//:set(DatapartidasCU7);
     virtual void ContinuarPartida(int)=0;	
