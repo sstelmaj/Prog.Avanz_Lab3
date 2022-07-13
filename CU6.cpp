@@ -15,7 +15,7 @@
 
 using namespace std;
 
-void IniciarPartida(){
+void iniciarPartida(){
     string nombre,nickname;
     int opcion,continua;
     bool transmitida;
@@ -24,7 +24,7 @@ void IniciarPartida(){
     Jugador* unir=NULL;
     Partida* nueva=NULL;
     Jugador* j =new Jugador();
-    fabrica->getInstance()->getInterfacejugador()->ListarVideoJuegosJugador();
+    fabrica->getInterfacejugador()->ListarVideoJuegosJugador();
     cout<<"Ingrese nombre de juego para iniciar partida: ";
     cin>>nombre;
     fabrica->getInstance()->getInterfacejugador()->IngresarNombreVideoJuego(nombre);

@@ -25,12 +25,18 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     fabrica* Fabrica;
-   
+    
+    AltaDeUsuario();
+    IniciarSesion();
+    PublicarVideoJuego();
+    iniciarPartida();
+    
+   /*
     AgregarCategoria();
     AgregarCategoria();
     AgregarCategoria();
     
-   PublicarVideoJuego();
+   PublicarVideoJuego();*/
    
     
     

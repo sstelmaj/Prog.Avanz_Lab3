@@ -18,16 +18,17 @@ ControladorJugador::ControladorJugador() {
 
 void ControladorJugador::ListarVideoJuegosJugador(){
     IDictionary* listajuegos=new ListDicc();
-    Jugador* jugador=(Jugador*)this->controladorusuario->getUsuario();
+    Jugador* jugador=(Jugador*)this->controladorusuario->getInstance()->getUsuario();
     listajuegos=jugador->ListarVideojuegosSuscriptos();
-    
+     cout<<"1"<<endl;
     IIterator * it = listajuegos->getIteratorObj();
-    
+    cout<<"2"<<endl;
     while (it->hasNext()) {
         Videojuego* actual=(Videojuego*)it->getCurrent();
         cout<<actual->getNombre()<<endl;
         it->next();
     }
+    cout<<"3"<<endl;
     delete it;
 }
 
