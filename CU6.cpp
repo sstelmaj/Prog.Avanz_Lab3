@@ -43,6 +43,10 @@ void iniciarPartida(){
             if(continua==1){
                 cout<<"Ingrese id de la partida a continuar: "<<endl;
                 datosPartidas=fabrica->getInstance()->getInterfacejugador()->HistorialPartidasIndividualesFinalizadas();
+                if(!datosPartidas){
+                    cout<<"No tiene partidas iniciadas"<<endl;
+                    return;
+                }
                 IIterator* it=datosPartidas->iterator();
                 while(it->hasNext()){
                     DataPartidas* actual=(DataPartidas*) it->getCurrent();
