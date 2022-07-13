@@ -17,8 +17,11 @@
 
 #include "Interface_Jugador.h"
 #include "IDictionary.h"
+#include "ICollection.h"
 #include "Usuario.h"
+#include "Controlador_Autenticacion.h"
 #include "ICollectible.h"
+#include "Servicio_Videojuego.h"
 
 
 #include <string>
@@ -28,12 +31,20 @@ class ControladorJugador :public InterfaceJugador{
 public:
 	
 	static ControladorJugador* getInstance();
+        void ListarVideoJuegosJugador();
+        void IngresarNombreVideoJuego(string);
+        ICollection* HistorialPartidasIndividualesFinalizadas();//:set(DatapartidasCU7);
+        void ContinuarPartida(int);
         virtual ~ControladorJugador();	
+        void TransmitirPartida(bool);
+        void UnirJugador(Jugador*);
+        Partida* AltaPartidaM();
+        Partida* AltaPartidaI();
+	void CancelarPartida();
 	
     /*
 	IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
-	IDictionary* ListarVideojuegosSuscripciones();//:set(DataVideojuegosCU5);
-	void IngresarNombreVideojuego(string);
+	IDictionary* ListarVideojuegosSuscripciones();//:set(DataVideojuegosCU5)
 	void CancelarSuscripcion();
 	void IngresarTipoSuscripcion(TipoSuscripcion);
 	void IngresarMetodoPago(MetodoPago);
@@ -41,14 +52,6 @@ public:
 	void ConfirmarAltaSuscripcion();
 	IDictionary* ListarVideoJuegos();//:set(DatajuegoCU6);
 	void AsignarPuntaje(string,int);
-	IDictionary* ListarVideoJuegosJugador();//:set(stringCU7);
-	IDictionary* HistorialPartidasIndividualesFinalizadas(string);//:set(DatapartidasCU7);
-	void ContinuarPartida(string,string);
-	void TransmitirPartida(bool);
-	IDictionary* ObtenerJugadores(string);//:set(stringCU7);
-	void UnirJugador(string);
-	void AltaPartida();
-	void CancelarPartida();
 	ICollectible* ListarPartidasUnidas();
 	void ConfirmarAbandono(int);
 	ICollectible* ListarPartidasSinTerminar();//:set(partidasSinTerminarCU9);
@@ -70,9 +73,15 @@ public:
 private:
         ControladorJugador();
 	static ControladorJugador* instance;
+        ControladorUsuario* controladorusuario;
 	IDictionary* usuSeleccionados;
 	//IDictionary* jugador;
 	Usuario* usu;
+        Servicio_Videojuego* InServicio;
+        string Tnombre;
+        bool TTransmision;
+        IDictionary* Tunidos;
+        int cantPartidas;
 };
 
 #endif /* CONTROLADOR_JUGADOR_H */

@@ -1,5 +1,6 @@
 #include "Videojuego.h"
 #include "Lista.h"
+#include "Suscripcion.h"
 Videojuego::Videojuego() {
 }
 

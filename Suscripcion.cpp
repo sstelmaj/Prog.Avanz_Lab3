@@ -19,6 +19,10 @@ Suscripcion::Suscripcion() {
 Suscripcion::Suscripcion(const Suscripcion& orig) {
 }
 
+string Suscripcion::ObtenerNombreJuego(){
+    return this->juego->getNombre();
+}
+
 Suscripcion::~Suscripcion() {
 }
 /*----------------------------VITALICEA--------------------------------------------*/

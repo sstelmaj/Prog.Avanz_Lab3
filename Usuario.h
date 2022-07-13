@@ -19,7 +19,7 @@
 #include "IDictionary.h"
 #include "ICollectible.h"
 #include "ICollection.h"
-
+#include "Partida.h"
 using namespace std;
 
 class Usuario : public ICollectible {
@@ -72,11 +72,11 @@ public:
     IDictionary* ListarVideojuegosSuscriptos();
     IDictionary* ListarNombresVideojuegos();
     void ConfirmarAltaSuscripcion();
-    void HistorialPartidasIndividualesFinalizadas(string);
+    IDictionary* HistorialPartidasIndividualesFinalizadas(string);
     void ContinuarPartida(int);
     void UnirJugador(Jugador);
     IDictionary* ObtenerJugadorConSuscripcion(string);
-    void AltaPartida();
+    void AltaPartida(Partida*);
     IDictionary* ListarInformacionPartida(string);
     void KickearJugador(int);
     IDictionary* ListarPartidasSinTerminar();

@@ -14,6 +14,7 @@ public:
     void agregarVideoJuego(Videojuego*);
     void ListarTodosVideoJuegos();
     virtual ~Servicio_Videojuego();
+    Videojuego* MostrarVideoJuego(string);
     IDictionary* mostrar();
     //DataVideojuegoCU11* ElegirVideoJuego(string);
     

@@ -17,11 +17,22 @@
 #include <string>
 #include "IDictionary.h"
 #include "ICollectible.h"
+#include "Usuario.h"
 
 using namespace std;
 
 class InterfaceJugador {
 public:
+    
+    virtual void ListarVideoJuegosJugador()=0;
+    virtual void IngresarNombreVideoJuego(string)=0;
+    virtual ICollection* HistorialPartidasIndividualesFinalizadas()=0;//:set(DatapartidasCU7);
+    virtual void ContinuarPartida(int)=0;	
+    virtual void TransmitirPartida(bool)=0;
+    virtual void UnirJugador(Jugador*)=0;
+    virtual Partida* AltaPartidaM()=0;
+    virtual Partida* AltaPartidaI()=0;
+    virtual void CancelarPartida()=0;
     /*
 	virtual IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
 	virtual IDictionary* ListarVideojuegosSuscripciones();//:set(DataVideojuegosCU5);

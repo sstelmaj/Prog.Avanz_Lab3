@@ -37,10 +37,14 @@ public:
         void IngresarNickname(DataJugador);
         void CancelarAltaUsuario();
         void ConfirmarAltaUsuario();
+        void ObtenerJugadores(string);
         bool buscarJugador(string);
+        void agregarPartida(Partida*);
+        Jugador* NicknameJugadoresUnirPartida(string);
         
         void setDataUsuarioTemporal(DataUsuario*);
         IDictionary* getUsuarios();
+        Usuario* getUsuario();
         
         void CancelarSesion();
         bool IniciarSesion(string,string);

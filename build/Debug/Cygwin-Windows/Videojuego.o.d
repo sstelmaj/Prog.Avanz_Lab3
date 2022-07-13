@@ -1,14 +1,14 @@
 build/Debug/Cygwin-Windows/Videojuego.o: Videojuego.cpp Videojuego.h \
- Suscripcion.h IDictionary.h ICollectible.h IKey.h IIterator.h \
- Categoria.h ICollection.h Lista.h Nodo.h ListaIterator.h
+ Categoria.h ICollectible.h IDictionary.h IKey.h IIterator.h \
+ ICollection.h Lista.h Nodo.h ListaIterator.h Suscripcion.h
 Videojuego.h:
-Suscripcion.h:
-IDictionary.h:
+Categoria.h:
 ICollectible.h:
+IDictionary.h:
 IKey.h:
 IIterator.h:
-Categoria.h:
 ICollection.h:
 Lista.h:
 Nodo.h:
 ListaIterator.h:
+Suscripcion.h:

@@ -14,7 +14,6 @@
 #define VIDEOJUEGO_H
 
 #include <string>
-#include "Suscripcion.h"
 #include "Categoria.h"
 #include "IDictionary.h"
 #include "ICollectible.h"

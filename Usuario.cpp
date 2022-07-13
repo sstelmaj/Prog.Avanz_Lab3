@@ -12,6 +12,11 @@
  */
 
 #include "Usuario.h"
+#include "ListaDicc.h"
+#include "KeyInt.h"
+#include "Partida.h"
+#include "Lista.h"
+#include "ListaDicc.h"
 
 Usuario::Usuario() {
 }
@@ -41,6 +46,8 @@ Jugador::Jugador(string mail, string contrasenia, string nickname, string descri
     this->nickname=nickname;
     this->descripcion=descripcion;
 }
+
+Jugador::Jugador(){}
 
 
 //getters Usuario
@@ -91,14 +98,51 @@ void Jugador::setDescripcion(string desc){
 
 
 
-IDictionary* Jugador::ListarVideojuegosSuscriptos(){}
+IDictionary* Jugador::ListarVideojuegosSuscriptos(){
+    return this->suscripciones;
+}
+
+
+
 IDictionary* Jugador::ListarNombresVideojuegos(){}
 void Jugador::ConfirmarAltaSuscripcion(){}
-void Jugador::HistorialPartidasIndividualesFinalizadas(string){}
-void Jugador::ContinuarPartida(int){}
+IDictionary* Jugador::HistorialPartidasIndividualesFinalizadas(string _juego){
+    IDictionary* ListaPartidas=new ListDicc();
+    IIterator * it = this->partidas->getIteratorObj();
+    
+    while (it->hasNext()) {
+        Partida* actual=(Partida*)it->getCurrent();
+        if (Individual * pPI = dynamic_cast<Individual*> (actual) ){
+            if(pPI->getVideojuego()->getNombre()==_juego){
+                KeyInt* key=new KeyInt(pPI->getIdPartida());
+                ListaPartidas->add(pPI,key);
+            }   
+        }
+        it->next();
+    }
+    return ListaPartidas;
+}
+void Jugador::ContinuarPartida(int _idpartida){
+    Partida* elegida=NULL;
+    KeyInt* key=new KeyInt(_idpartida);
+    elegida=(Partida*)this->partidas->find(key);
+    if(!elegida){
+        cout<<"No existe la partida";
+        delete key;
+        return;
+    }else{
+        cout<<"Partida Iniciada";
+    }
+}
+
 void Jugador::UnirJugador(Jugador){}
+
 IDictionary* Jugador::ObtenerJugadorConSuscripcion(string){}
-void Jugador::AltaPartida(){}
+
+void Jugador::AltaPartida(Partida* _nueva){
+    KeyInt* key=new KeyInt(_nueva->getIdPartida());
+    this->partidas->add(_nueva,key);
+}
 IDictionary* Jugador::ListarInformacionPartida(string){}
 void Jugador::KickearJugador(int){}
 IDictionary* Jugador::ListarPartidasSinTerminar(){}

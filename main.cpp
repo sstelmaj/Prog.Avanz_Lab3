@@ -16,6 +16,7 @@
 #include "CU3.h"
 #include "CU2.h"
 #include "CU4.h"
+#include "CU6.h"
 
 using namespace std;
 

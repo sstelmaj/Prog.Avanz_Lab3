@@ -10,12 +10,9 @@
 #include "Fabrica.h"
 #include "DataUsuario.h"
 #include "CU1.h"
+#include"Videojuego.h"
 
 using namespace std;
-
-
-
-//ESTO ES COMENTARIO DE SEBA
 
 
 void AltaDeUsuario(){

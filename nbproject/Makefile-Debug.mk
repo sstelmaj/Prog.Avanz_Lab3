@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/CU2.o \
 	${OBJECTDIR}/CU3.o \
 	${OBJECTDIR}/CU4.o \
+	${OBJECTDIR}/CU6.o \
 	${OBJECTDIR}/Categoria.o \
 	${OBJECTDIR}/Comentario.o \
 	${OBJECTDIR}/Controlador_Autenticacion.o \
@@ -121,6 +122,11 @@ ${OBJECTDIR}/CU4.o: CU4.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU4.o CU4.cpp
+
+${OBJECTDIR}/CU6.o: CU6.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU6.o CU6.cpp
 
 ${OBJECTDIR}/Categoria.o: Categoria.cpp
 	${MKDIR} -p ${OBJECTDIR}

@@ -27,6 +27,7 @@ using namespace std;
 class Partida : public ICollectible  {
 public:
     Partida();
+    Partida(Videojuego*, DtDate*,DtTime*,int);
     Partida(const Partida& orig);
     virtual ~Partida();
     
@@ -34,26 +35,27 @@ public:
     bool getFinalizada();
     int getIdPartida();
     DtDate* getFecha();
-    string getHora();
-    DtTime* getDuracion();
-    void setVideojuego(Videojuego);
+    DtTime* getHora();
+    float getDuracion();
+    void setVideojuego(Videojuego*);
     void setFinalizada(bool);
     void setIdPartida(int);
-    void setFecha(DtDate);
-    void setHora(string);
-    void setDuracion(DtTime);
+    void setFecha(DtDate*);
+    void setHora(DtTime*);
+    void setDuracion(float);
 private:
     Videojuego* videojuego;
     bool finalizada;
     int idPartida;
     DtDate* fecha;
-    string hora;
-    DtTime* duracion;
+    DtTime* hora;
+    float duracion;
 };
 //------------------------------------------------------------------------------
 class Mutlijugador : public Partida {
 public:
     Mutlijugador();
+    Mutlijugador(Videojuego*, DtDate*,DtTime*,IDictionary*,bool,int);
     Mutlijugador(const Mutlijugador& orig);
     virtual ~Mutlijugador();
     
@@ -75,7 +77,7 @@ private:
 //------------------------------------------------------------------------------
 class Individual : public Partida {
 public:
-    Individual();
+    Individual(Videojuego*, DtDate*,DtTime*,int);
     Individual(const Individual& orig);
     virtual ~Individual();
     

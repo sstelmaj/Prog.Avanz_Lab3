@@ -17,6 +17,7 @@
 #include <string>
 #include "IDictionary.h"
 #include "ICollectible.h"
+#include "Videojuego.h"
 
 using namespace std;
 
@@ -35,8 +36,9 @@ public:
     Suscripcion(const Suscripcion& orig);
     virtual ~Suscripcion();
     
-    IDictionary* ObtenerNombreJuego();
+    string ObtenerNombreJuego();
 private:
+    Videojuego* juego;
 };
 //------------------------------------------------------------------------------
 class Vitalicea : public Suscripcion {

@@ -13,7 +13,7 @@
 
 #include "DataPartidas.h"
 
-DataPartidas::DataPartidas(string _id, DtTime* _hora, DtDate* _fecha, float _duracion) {
+DataPartidas::DataPartidas(int _id, DtTime* _hora, DtDate* _fecha, float _duracion) {
     this->ID=_id;
     this->hora=_hora;
     this->fecha=_fecha;
@@ -23,7 +23,7 @@ DataPartidas::DataPartidas(string _id, DtTime* _hora, DtDate* _fecha, float _dur
 DataPartidas::~DataPartidas() {
 }
 
-string DataPartidas::getID(){
+int DataPartidas::getID(){
     return this->ID;
 }
 
