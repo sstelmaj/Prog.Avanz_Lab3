@@ -7,6 +7,8 @@
 #include "Fabrica.h"
 
 void VerInformacionVideojuego(){
+    int horas;
+    Usuario* usu;
     fabrica* fabrica;
     string juego;
     DataVideojuegoCU11* datos;
@@ -18,6 +20,8 @@ void VerInformacionVideojuego(){
     cout<<"Descripcion: "<<datos->getDescripcion()<<endl;
     cout<<"Costo Permanente de la suscripcion: "<<datos->getCostoPermanente()<<endl;
     cout<<"Costo Mensual de la suscripcion: "<<datos->getCostoMensual()<<endl;
+    datos->CatToString();
     cout<<"Empresa: "<<datos->getEmpresa()<<endl;
     cout<<"Puntaje: "<<datos->getPromPuntaje()<<endl;
+    usu=fabrica->getInterfaceusuario()->getUsu();
 }

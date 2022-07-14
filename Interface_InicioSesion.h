@@ -40,8 +40,8 @@ public:
         virtual Usuario* getUsu()=0;
         
         virtual void cargarDatosPrueba()=0;
+        virtual int ObtenerSumasHoras(string)=0;
 /*
-	
 	virtual Usuario* getUsuario()=0;
 */
   

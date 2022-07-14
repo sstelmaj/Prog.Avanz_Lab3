@@ -51,6 +51,7 @@ void DataVideojuegoCU11::CatToString(){
     while (it->hasNext()) {
             Categoria * C = (Categoria*) (it->getCurrent());
             cout<<C->getNombre()<<endl;
+            it->next();
         }
 }
 

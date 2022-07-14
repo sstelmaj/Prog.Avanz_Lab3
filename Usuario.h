@@ -91,7 +91,7 @@ public:
     void UnirJugador(Jugador);
     IDictionary* ObtenerJugadorConSuscripcion(string);
     void AltaPartida(Partida*);
-    IDictionary* ListarInformacionPartida(string);
+    IDictionary* ListarInformacionPartida();
     void KickearJugador(int);
     
     void FinalizarPartida();

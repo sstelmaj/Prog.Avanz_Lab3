@@ -54,6 +54,9 @@ public:
         Jugador* NicknameJugadoresUnirPartida(string);
         void ObtenerJugadores(string);
         void agregarPartida(Partida*);
+        
+        //CU9
+        int ObtenerSumasHoras(string);
 
 private:
         ControladorUsuario();

@@ -188,3 +188,7 @@ void ControladorUsuario::cargarDatosPrueba(){
     key = new KeyString("camila@mail.com");
     this->usuarios->add(j,key);
 }
+
+int ControladorUsuario::ObtenerSumasHoras(string _juego){
+   
+}

@@ -138,10 +138,13 @@ void Jugador::ConfirmarAltaSuscripcion(Suscripcion* suscripcion){
     this->suscripciones->add(suscripcion);
 }
 
+IDictionary* Jugador::ListarInformacionPartida(){
+    return this->partidas;
+}
+
 
 void Jugador::UnirJugador(Jugador){}
 IDictionary* Jugador::ObtenerJugadorConSuscripcion(string){}
-IDictionary* Jugador::ListarInformacionPartida(string){}
 void Jugador::KickearJugador(int){}
 IDictionary* Jugador::ListarComentariosPartida(int){}
 void Jugador::ElegirComentario(int){}
