@@ -396,3 +396,31 @@ void ControladorJugador::cargarDatosPrueba(){
     
     
 }
+
+DataVideojuegoCU11* ControladorJugador::elegirVideojuego(string _nombre){
+    int costoperm,costomen;
+    Videojuego* juego= this->servicio->getInstance()->MostrarVideoJuego(_nombre);
+    ICollection* suscripciones= juego->listarSuscripciones();
+    ICollection* categorias=juego->ObtenerCategorias();
+    IIterator* it=suscripciones->iterator();
+    while(it->hasNext()){
+        Suscripcion* actual=(Suscripcion*)it->getCurrent();
+        if(Vitalicea* pV= dynamic_cast<Vitalicea*> (actual)){
+            costoperm=pV->getCosto();        
+        }
+        else if(Temporal* pT= dynamic_cast<Temporal*> (actual)){
+            if((int)pT->getPeriodoValidez()==0){
+                costomen=pT->getCostoMensual();
+            }             
+        }
+        it->next();
+    }
+    
+    DataVideojuegoCU11* datos=new DataVideojuegoCU11(juego->getDescripcion(),costoperm,costomen,categorias,juego->getEmpresa(),juego->getPromedio());
+    
+    return datos;
+}
+
+void ControladorJugador::ListarTodosVideojuegos(){  
+    this->servicio->getInstance()->ListarTodosVideoJuegos();
+}

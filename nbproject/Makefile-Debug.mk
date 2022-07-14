@@ -43,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/CU6.o \
 	${OBJECTDIR}/CU7.o \
 	${OBJECTDIR}/CU8.o \
+	${OBJECTDIR}/CU9.o \
 	${OBJECTDIR}/Categoria.o \
 	${OBJECTDIR}/Comentario.o \
 	${OBJECTDIR}/Controlador_Autenticacion.o \
@@ -101,11 +102,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/CU1.o: CU1.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -146,6 +147,11 @@ ${OBJECTDIR}/CU8.o: CU8.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU8.o CU8.cpp
+
+${OBJECTDIR}/CU9.o: CU9.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU9.o CU9.cpp
 
 ${OBJECTDIR}/Categoria.o: Categoria.cpp
 	${MKDIR} -p ${OBJECTDIR}

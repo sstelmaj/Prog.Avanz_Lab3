@@ -4,8 +4,8 @@ build/Debug/Cygwin-Windows/CU2.o: CU2.cpp Usuario.h IDictionary.h \
  Suscripcion.h Controlador_Autenticacion.h Interface_InicioSesion.h \
  DataUsuario.h KeyString.h ListaDicc.h NodoDicc.h Par.h \
  ListDiccIterator.h ListDiccIteratorObj.h ListDiccIteratorKey.h Fabrica.h \
- Interface_Jugador.h Historial.h Interface_Desarrollador.h \
- Servicio_Videojuego.h DataVideojuegoCU11.h CU2.h
+ Interface_Jugador.h Historial.h DataVideojuegoCU11.h \
+ Interface_Desarrollador.h Servicio_Videojuego.h CU2.h
 Usuario.h:
 IDictionary.h:
 ICollectible.h:
@@ -34,7 +34,7 @@ ListDiccIteratorKey.h:
 Fabrica.h:
 Interface_Jugador.h:
 Historial.h:
+DataVideojuegoCU11.h:
 Interface_Desarrollador.h:
 Servicio_Videojuego.h:
-DataVideojuegoCU11.h:
 CU2.h:

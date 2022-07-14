@@ -23,21 +23,21 @@ using namespace std;
 
 class DataVideojuegoCU11: public ICollectible {
 public:
-    DataVideojuegoCU11(string,float,float,string,float , ICollection*);
+    DataVideojuegoCU11(string,int,int,ICollection*,string, int);
     string getDescripcion();
     string getEmpresa();
-    float getCostoPermanente();
-    float getCostoMensual();
-    float getPromPuntaje();
+    int getCostoPermanente();
+    int getCostoMensual();
+    int getPromPuntaje();
+    void CatToString();
     virtual ~DataVideojuegoCU11();
 private:
     string descripcion;
-    float costopermanente;
-    float costomensual;
     string empresa;
-    float prom_puntaje;
+    int costopermanente;
+    int costomensual;
+    int prom_puntaje;
     ICollection* categorias;
 };
 
-#endif /* DATAVIDEOJUEGOCU11_H */
-
+#endif/* DATAVIDEOJUEGOCU11_H */

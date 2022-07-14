@@ -8,6 +8,7 @@
 #include "CU6.h"
 #include "CU7.h"
 #include "CU8.h"
+#include "CU9.h"
 #include "Fabrica.h"
 
 using namespace std;
@@ -76,7 +77,7 @@ int main(int argc, char** argv) {
                                 }
                                 case 6:
                                 {
-                                    //Ver informacion de videojuego
+                                    VerInformacionVideojuego();
                                     break;
                                 }
                             }
@@ -103,7 +104,7 @@ int main(int argc, char** argv) {
                                 }
                                 case 6:
                                 {
-                                    //ver infomacion Videojuego
+                                    VerInformacionVideojuego();
                                     break;
                                 }
                             }

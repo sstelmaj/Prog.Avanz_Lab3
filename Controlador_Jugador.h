@@ -63,6 +63,10 @@ public:
         void FinalizarPartida(int);
         
         void cargarDatosPrueba();
+        
+        //CASO DE USO 9
+        DataVideojuegoCU11* elegirVideojuego(string);       
+        void ListarTodosVideojuegos();
 	
     /*
 	IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   

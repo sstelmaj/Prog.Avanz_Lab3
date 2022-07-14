@@ -20,6 +20,7 @@
 #include "Historial.h"
 #include "Suscripcion.h"
 #include "Usuario.h"
+#include "DataVideojuegoCU11.h"
 
 using namespace std;
 
@@ -56,6 +57,9 @@ public:
         virtual void FinalizarPartida(int)=0;
         virtual void ListarPartidasSinTerminar()=0;
         
+        //CU9
+        virtual void ListarTodosVideojuegos()=0;
+        virtual DataVideojuegoCU11* elegirVideojuego(string)=0;
         
         //CARGAR DATUS PRUEBA
         virtual void cargarDatosPrueba()=0;

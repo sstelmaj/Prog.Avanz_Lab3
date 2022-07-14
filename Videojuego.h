@@ -38,6 +38,8 @@ public:
     void setNombre(string);
     void setDescripcion(string);
     void setPromedio(int);
+    string getEmpresa();
+    void setEmpresa(string);
     
     ICollection* listarSuscripciones();
     
@@ -45,9 +47,11 @@ public:
     void AgregarCategorias(ICollection *);
     ICollection* ListarInformacionVideojuego();
     ICollection* ObtenerSumaHoras();
+    ICollection* ObtenerCategorias();
     
     
 private:
+    string empresa;
     string nombre;
     string descripcion;
     int promedio;

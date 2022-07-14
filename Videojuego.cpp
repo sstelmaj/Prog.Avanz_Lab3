@@ -70,5 +70,23 @@ ICollection* Videojuego::listarSuscripciones(){
     return aux_suscripciones;
 }
 
+ICollection* Videojuego::ObtenerCategorias(){
+    ICollection* aux_categorias = new Lista();
+        IIterator * it = this->categorias->iterator();
+        while (it->hasNext()) {
+            Categoria * C = (Categoria*) (it->getCurrent());
+            aux_categorias->add(C);
+            it->next();
+        }
+        return aux_categorias;
+}
+
+void Videojuego::setEmpresa(string _empresa){
+    this->empresa=_empresa;
+}
+
+string Videojuego::getEmpresa(){
+    return this->empresa;
+}
 ICollection* Videojuego::ListarInformacionVideojuego(){}
 ICollection* Videojuego::ObtenerSumaHoras(){}
