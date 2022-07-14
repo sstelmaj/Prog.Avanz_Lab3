@@ -175,6 +175,7 @@ void ControladorD::ConfirmarPublicacion(Usuario* _usu){
     nuevo->AgregarCategorias(this->Tcategorias);
     nuevo->AsociarSuscripcion(this->Tsuscripcion);
     nuevo->setEmpresa(pD->getNombreCompania());
+    nuevo->setPromedio(0);
     InServicio->getInstance()->agregarVideoJuego(nuevo);
     
     /*

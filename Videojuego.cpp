@@ -8,7 +8,7 @@ Videojuego::Videojuego() {
 Videojuego::Videojuego(string _nombre,string _descripcion) {
     this->nombre=_nombre;
     this->descripcion=_descripcion;
-    
+    this->promedio=0;
 }
 
 Videojuego::Videojuego(const Videojuego& orig) {
@@ -33,7 +33,7 @@ void Videojuego::setDescripcion(string _descripcion){
     this->descripcion=_descripcion;
 }
 void Videojuego::setPromedio(int promedio){
-
+    this->promedio=promedio;
 }
 
 void Videojuego::AsociarSuscripcion(ICollection * _suscripciones){
