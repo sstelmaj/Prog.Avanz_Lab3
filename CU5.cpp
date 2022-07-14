@@ -19,7 +19,7 @@ void SuscribirseAVideojuego(){
     ICollection* suscripciones;
     bool estaSuscripto;
     int opcion;
-    //listo lis videojuegos suscriptos por el jugador
+    //listo los videojuegos suscriptos por el jugador
     
     suscriptos = fabrica->getInterfacejugador()->ListarVideojuegosSuscriptos();
     
@@ -68,7 +68,7 @@ void SuscribirseAVideojuego(){
     
     cout<<"\n\nIngrese el nombre del videojuego: "<<endl;
     cin>>juego;
-    fabrica->getInterfacejugador()->IngresarNombreVideojuego(juego);
+    fabrica->getInterfacejugador()->IngresarNombreVideojuegoCU5(juego);
     
     it = suscriptos->iterator();
     while (it->hasNext()) {
@@ -86,7 +86,6 @@ void SuscribirseAVideojuego(){
                     return;
                 }else{
                     fabrica->getInterfacejugador()->CancelarSuscripcion(S->GetVideojuego());
-                    //acá tendria que agregar la suscripcion a "Historial"
                 }
             }
         }

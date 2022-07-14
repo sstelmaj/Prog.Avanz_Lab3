@@ -29,7 +29,7 @@ public:
     
         virtual ICollection* ListarVideojuegosSuscriptos()=0;//:set(DataVideojuegosCU5)   
 	virtual ICollection* ListarVideojuegosSuscripciones()=0;//:set(DataVideojuegosCU5);
-	virtual	void IngresarNombreVideojuego(string)=0;
+	virtual	void IngresarNombreVideojuegoCU5(string)=0;
 	virtual void CancelarSuscripcion(Videojuego*)=0;
 	virtual void IngresarTipoSuscripcion(TipoSuscripcion)=0;
 	virtual void IngresarMetodoPago(MetodoPago)=0;
@@ -54,7 +54,11 @@ public:
         
         //CU8
         virtual void FinalizarPartida(int)=0;
-        virtual ICollectible* ListarPartidasSinTerminar()=0;
+        virtual void ListarPartidasSinTerminar()=0;
+        
+        
+        //CARGAR DATUS PRUEBA
+        virtual void cargarDatosPrueba()=0;
     /*
 	
 	virtual IDictionary* ListarVideoJuegos();//:set(DatajuegoCU6);

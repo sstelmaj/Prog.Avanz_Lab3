@@ -31,22 +31,21 @@ void IniciarSesion(){
 
         if(esta == false){
             cout<<"Usuario Invalido, vuelva a intetarlo"<<endl;
-            cout<<"[1]Volver a intentarlo";
-            cout<<"[2]cancelar sesion";
+            cout<<"[1]Volver a intentarlo"<<endl;
+            cout<<"[2]cancelar sesion"<<endl;
             cout<<"Ingresar opcion: ";
             cin>>opcion;
         }
         if(opcion == 2){
-            
             fabrica->getInstance()->getInterfaceusuario()->CancelarSesion();
             return;
         }
         
     }while(opcion == 1 );
     if(esta == true){
-        cout<<"Sesion Iniciada!";
+        cout<<"Sesion Iniciada!"<<endl;
     }
     else{
-        cout<<"No se pudo iniciar sesion";
+        cout<<"No se pudo iniciar sesion"<<endl;
     }
 }

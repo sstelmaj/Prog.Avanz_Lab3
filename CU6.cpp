@@ -49,7 +49,11 @@ void iniciarPartida(){
                 IIterator* it=datosPartidas->iterator();
                 while(it->hasNext()){
                     DataPartidas* actual=(DataPartidas*) it->getCurrent();
-                    cout<<"ID:"<<actual->getID()<<"\tFecha de creacion: "<<actual->getFecha()<<"\tHora de creacion: "<<actual->getTiempo()<<"\tDuracion de la partida: "<<actual->getDuracion()<<endl;
+                    cout<<"ID:"<<actual->getID()<<"\tFecha de creacion: ";
+                    actual->getFecha()->toString();cout<<"\tHora de creacion: ";
+                    actual->getTiempo()->toString();cout<<"\tDuracion de la partida: ";
+                    actual->getDuracion()->toString();cout<<endl;
+                    it->next();
                 }
                 delete it;
                 cin>>continua;

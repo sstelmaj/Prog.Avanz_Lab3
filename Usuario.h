@@ -80,7 +80,7 @@ public:
     
     
     //CASO DE USO 8
-    IDictionary* ListarPartidasSinTerminar();
+    void ListarPartidasSinTerminar();
     void FinalizarPartida(int);
     
     ICollection* ListarVideojuegosSuscriptos();

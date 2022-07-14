@@ -97,10 +97,6 @@ ICollection* Servicio_Videojuego::ListarVideojuegos(){
 
 
 Videojuego* Servicio_Videojuego::MostrarVideoJuego(string _nombre){
-    /*
-    KeyString* key= new KeyString(_nombre);
-    Videojuego* J=(Videojuego*)this->videojuegos->find(key);
-    */
     Videojuego* J;
     
     IIterator * it = this->videojuegos->iterator();
@@ -115,5 +111,5 @@ Videojuego* Servicio_Videojuego::MostrarVideoJuego(string _nombre){
 
 
 void Servicio_Videojuego::CargarDatosPrueba(){
-    
+
 }

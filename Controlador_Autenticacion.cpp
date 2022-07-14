@@ -122,14 +122,7 @@ void ControladorUsuario::ObtenerJugadores(string _juego){
 }
 
 Jugador* ControladorUsuario::NicknameJugadoresUnirPartida(string _nombre){
-    /*Jugador* jugador=NULL;
-    KeyString* key= new KeyString(_nombre);
-    jugador=(Jugador*)this->usuarios->find(key);
-    if(!jugador){
-        return NULL;
-    }
-    */
-    
+  
     Jugador * jugador = NULL;
     IIterator* it = this->usuarios->getIteratorObj();
     

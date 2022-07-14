@@ -5,6 +5,7 @@
 #include "ListaDicc.h"
 #include "KeyInt.h"
 #include "DataPartidasUnidas.h"
+#include <ctime>
 
 
 ControladorJugador* ControladorJugador::instance = NULL;
@@ -40,7 +41,7 @@ ICollection* ControladorJugador::ListarVideojuegosSuscripciones(){
     videojuegosSuscripciones = this->servicio->getInstance()->ListarVideojuegosSuscripciones(mijugador);
     return videojuegosSuscripciones;
 }
-void ControladorJugador::IngresarNombreVideojuego(string nombre){
+void ControladorJugador::IngresarNombreVideojuegoCU5(string nombre){
     this->nombreJuegoTemporal=nombre;
 }
 void ControladorJugador::CancelarSuscripcion(Videojuego* videojuego){
@@ -118,7 +119,7 @@ void ControladorJugador::IngresarNombreVideoJuego(string _nombre){
 }
 
 ICollection* ControladorJugador::HistorialPartidasIndividualesFinalizadas(){
-    Jugador *jugador=(Jugador*)this->controladorU->getUsu();
+    Jugador *jugador=(Jugador*)this->controladorU->getInstance()->getUsu();
     IDictionary* listaPartidas=new ListDicc();
     ICollection* listadatos=new Lista();
     listaPartidas=jugador->HistorialPartidasIndividualesFinalizadas(this->Tnombre);
@@ -145,24 +146,42 @@ void ControladorJugador::UnirJugador(Jugador* nuevo){
 }
 
 Partida * ControladorJugador::AltaPartidaM(){
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
     int idPartida=this->cantPartidas;
     this->cantPartidas++;
     Videojuego* juego=this->servicio->getInstance()->MostrarVideoJuego(this->Tnombre);
-    DtDate* _fecha=new DtDate(11,11,11);
-    DtTime* _hora=new DtTime(01,01,01);
+    int anio = 1900 + ltm->tm_year;
+    int mes = 1 + ltm->tm_mon;
+    int dia = ltm->tm_mday;
+    int hora = 5 + ltm->tm_hour;
+    int minutos = 30 + ltm->tm_min;
+    int segundos = ltm->tm_sec;
+    DtDate* _fecha=new DtDate(dia,mes,anio);
+    DtTime* _hora=new DtTime(hora,minutos,segundos);
     Jugador* host = (Jugador*)this->controladorU->getInstance()->getUsu();
 
     Partida* nueva=new Mutlijugador(juego,_fecha,_hora,this->Tunidos,this->TTransmision,idPartida, host->getNickname());
+    nueva->setDuracion(new DtDate(0,0,0));
     return nueva;
 }
 
 Partida * ControladorJugador::AltaPartidaI(){
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
     int idPartida=this->cantPartidas;
     this->cantPartidas++;
     Videojuego* juego=this->servicio->getInstance()->MostrarVideoJuego(this->Tnombre);
-    DtDate* _fecha=new DtDate(11,11,11);
-    DtTime* _hora=new DtTime(01,01,01);
+    int anio = 1900 + ltm->tm_year;
+    int mes = 1 + ltm->tm_mon;
+    int dia = ltm->tm_mday;
+    int hora = 5 + ltm->tm_hour;
+    int minutos = 30 + ltm->tm_min;
+    int segundos = ltm->tm_sec;
+    DtDate* _fecha=new DtDate(dia,mes,anio);
+    DtTime* _hora=new DtTime(hora,minutos,segundos);
     Partida* nueva=new Individual(juego,_fecha,_hora,idPartida);
+    nueva->setDuracion(new DtDate(0,0,0));
     return nueva;
 }
 
@@ -173,7 +192,7 @@ void ControladorJugador::CancelarPartida(){
 }
 
 void ControladorJugador::ContinuarPartida(int _idPartida){
-    Jugador* j=(Jugador*)this->controladorU->getUsu();
+    Jugador* j=(Jugador*)this->controladorU->getInstance()->getUsu();
     j->ContinuarPartida(_idPartida);
 }
 
@@ -181,7 +200,6 @@ void ControladorJugador::ContinuarPartida(int _idPartida){
 
 //CASO DE USO 7
 IDictionary* ControladorJugador::ListarPartidasUnidas(){
-   // if(usu == NULL){ cout<<"No hay una sesion activa"<<endl}else{
     
     Jugador* u = (Jugador*) (this->controladorU->getInstance()->getUsu());
     IDictionary* partidas = u->ListarPartidasMultijugador();//ListarPartidasMultijugador() retorna una coleccion de partidas;
@@ -242,14 +260,139 @@ int ControladorJugador::ConfirmarAbandono(int id){
 
 
 //CASO DE USO 8
-ICollectible* ControladorJugador::ListarPartidasSinTerminar(){
+void ControladorJugador::ListarPartidasSinTerminar(){
     Jugador * mijugador = dynamic_cast<Jugador*> (this->controladorU->getInstance()->getUsu()); 
     mijugador->ListarPartidasSinTerminar();
 }
 
 void ControladorJugador::FinalizarPartida(int idPartida){
-     Jugador * mijugador = dynamic_cast<Jugador*> (this->controladorU->getInstance()->getUsu()); 
-     mijugador->FinalizarPartida(idPartida);
+    Jugador * mijugador = dynamic_cast<Jugador*> (this->controladorU->getInstance()->getUsu()); 
+    mijugador->FinalizarPartida(idPartida);
 }
 
 
+
+
+
+
+
+///////////////////////////CARGAR DATOS DE PRUEBA
+void ControladorJugador::cargarDatosPrueba(){
+    
+    Jugador* jugador;
+    IDictionary* usuarios = this->controladorU->getInstance()->getUsuarios();
+    
+    //PRIMERA SUSCRIPCION
+    IIterator* it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="gamer")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("KingdomRush");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)0);
+    this->IngresarTiempoValidez((TiempoValidez)1);
+    this->IngresarMetodoPago((MetodoPago)1);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    
+    
+    //SEGUNDA SUSCRIPCION
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="gamer")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("Fortnite");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)0);
+    this->IngresarTiempoValidez((TiempoValidez)1);
+    this->IngresarMetodoPago((MetodoPago)0);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    //TERCERA SUSCRIPCION
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="ari")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("Fortnite");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)0);
+    this->IngresarTiempoValidez((TiempoValidez)0);
+    this->IngresarMetodoPago((MetodoPago)1);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    
+    
+    //CUARTA SUSCRIPCION
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="ari")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("Minecraft");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)0);
+    this->IngresarTiempoValidez((TiempoValidez)2);
+    this->IngresarMetodoPago((MetodoPago)0);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    
+    //QUINTA SUSCRIPCION
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="ibai")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("Fortnite");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)0);
+    this->IngresarTiempoValidez((TiempoValidez)2);
+    this->IngresarMetodoPago((MetodoPago)0);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    //SEXTA SUSCRIPCION
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="ibai")
+            jugador=j;
+        it->next();
+    }
+    this->controladorU->getInstance()->setUsuario(jugador);
+    this->IngresarNombreVideojuegoCU5("Minecraft");
+    this->IngresarTipoSuscripcion((TipoSuscripcion)1);
+    this->IngresarTiempoValidez((TiempoValidez)999);
+    this->IngresarMetodoPago((MetodoPago)0);
+    this->ConfirmarAltaSuscripcion();
+    
+    
+    
+    //PARTIDAS INDIVIDUALES DE PRUEBA
+    it = usuarios->getIteratorObj();
+    while(it->hasNext()){ // recorre jugador por jugador
+        Jugador* j = (Jugador*) (it->getCurrent());
+        if (j->getNickname()=="gamer")
+            jugador=j;
+        it->next();
+    }
+    
+    
+    
+}

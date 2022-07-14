@@ -195,7 +195,6 @@ void Jugador::ContinuarPartida(int _idpartida){
 }
 
 void Jugador::AltaPartida(Partida* _nueva){
-    
     KeyInt* key=new KeyInt(_nueva->getIdPartida());
     this->partidas->add(_nueva, key);
 }
@@ -214,7 +213,7 @@ IDictionary* Jugador::ListarPartidasMultijugador(){
 
 
 
-IDictionary* Jugador::ListarPartidasSinTerminar() {
+void Jugador::ListarPartidasSinTerminar() {
 
     IIterator * it = this->partidas->getIteratorObj();
 
@@ -224,7 +223,7 @@ IDictionary* Jugador::ListarPartidasSinTerminar() {
                 cout << "ID: ";
                 cout << P->getIdPartida() << endl;
                 cout << "Fecha de comienzo: ";
-                cout << P->getFecha() << endl;
+                P->getFecha()->toString(); cout<<endl;
                 cout << "Videojuego: ";
                 Videojuego* V = P->getVideojuego();
                 cout << V->getNombre() << endl;

@@ -9,41 +9,55 @@
         <group>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Desarrollador.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Interface_InicioSesion.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU2.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Lista.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Autenticacion.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Fabrica.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/main.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Suscripcion.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Categoria.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU6.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Usuario.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU3.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Historial.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Servicio_Videojuego.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Videojuego.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/ICollection.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DtTime.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Autenticacion.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Interface_Desarrollador.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU7.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DtDate.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Jugador.h</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Videojuego.h</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU4.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Desarrollador.h</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU5.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU3.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU7.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Servicio_Videojuego.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU5.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DataPartidasUnidas.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DtDate.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Jugador.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Categoria.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Interface_Jugador.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Partida_1.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU2.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DataPartidasUnidas.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Lista.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Autenticacion.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Suscripcion.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/main.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU3.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DataPartidas.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Servicio_Videojuego.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/ListDiccIterator.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Videojuego.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/IDictionary.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DtTime.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Autenticacion.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Interface_Desarrollador.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU6.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Desarrollador.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU4.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DataPartidas.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/DtTime.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU8.h</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Suscripcion.h</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Usuario.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Servicio_Videojuego.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU8.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU2.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Comentario.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU1.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU5.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/CU1.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Historial.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Fabrica.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Lista.cpp</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/ListDiccIteratorKey.h</file>
+            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/ListaIterator.cpp</file>
             <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Partida.h</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Categoria.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Controlador_Jugador.cpp</file>
-            <file>file:/C:/Users/sebas/Documents/NetBeansProjects/Laboratorio_4/Interface_Jugador.h</file>
         </group>
     </open-files>
 </project-private>

@@ -40,7 +40,6 @@ void AltaDeUsuario(){
             cout<<"Ingrese nickname"<<endl;
             cin>>nickname;
             
-            //esigual = fabrica->getInterfaceusuario()->buscarJugador(nickname);
             if (esigual==true){
                 cout<<"ERROR: el nickname ya existe"<<endl;
                 cout<<"[0] cancelar alta\n[1] volver a internar"<<endl;

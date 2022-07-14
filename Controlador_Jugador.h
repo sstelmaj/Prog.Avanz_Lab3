@@ -35,7 +35,7 @@ public:
         
         ICollection* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
 	ICollection* ListarVideojuegosSuscripciones();//:set(DataVideojuegosCU5);
-	void IngresarNombreVideojuego(string);
+	void IngresarNombreVideojuegoCU5(string);
 	void CancelarSuscripcion(Videojuego*);
 	void IngresarTipoSuscripcion(TipoSuscripcion);
 	void IngresarMetodoPago(MetodoPago);
@@ -59,8 +59,10 @@ public:
         int ConfirmarAbandono(int);
         
         //CASO DE USO 8
-        ICollectible* ListarPartidasSinTerminar();
+        void ListarPartidasSinTerminar();
         void FinalizarPartida(int);
+        
+        void cargarDatosPrueba();
 	
     /*
 	IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   

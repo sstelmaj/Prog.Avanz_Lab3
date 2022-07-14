@@ -31,11 +31,13 @@ int main(int argc, char** argv) {
     fabrica* Fabrica;
     Fabrica->getInterfaceusuario()->cargarDatosPrueba();
     Fabrica->getInterfaceD()->cargarDatosPrueba();
+    Fabrica->getInterfacejugador()->cargarDatosPrueba();
     
     IniciarSesion();
     
     SuscribirseAVideojuego();
 
+    iniciarPartida();
     iniciarPartida();
     
     FinalizarPartida();

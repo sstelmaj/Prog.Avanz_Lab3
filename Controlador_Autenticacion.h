@@ -59,7 +59,7 @@ private:
         ControladorUsuario();
 	static ControladorUsuario* instance;
 	IDictionary* usuarios; // controladora tiene una coleccion de usuarios
-	Usuario* usu=new Jugador("prueba@gmail.com", "123", "senior Prueba", "Usado en pruebas"); // un usuario
+	Usuario* usu; // un usuario
         DataUsuario* dataUsuarioTemporal;
 };
 
