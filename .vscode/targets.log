@@ -1,0 +1,629 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-cygwin
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Tue Jul 12 21:17:09 2022
+
+# Variables
+ 
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\laptopwin
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\laptopwin\AppData\Local
+# environment
+VSCODE_CWD = C:\Users\laptopwin\AppData\Local\Programs\Microsoft VS Code
+# makefile (from 'nbproject/Makefile-variables.mk', line 13)
+CND_ARTIFACT_PATH_Debug = dist/Debug/Cygwin-Windows/prog.avanz_lab3-casodeuso1
+# environment
+SYSTEMROOT = C:\WINDOWS
+# makefile (from 'nbproject/Makefile-impl.mk', line 18)
+BUILD_SUBPROJECTS_ = .build-subprojects
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2916_MIKCVQPSWDWJHMQA
+# makefile (from 'nbproject/Makefile-variables.mk', line 12)
+CND_ARTIFACT_NAME_Debug = prog.avanz_lab3-casodeuso1
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# makefile (from 'nbproject/Makefile-variables.mk', line 8)
+CND_DISTDIR = dist
+# makefile (from 'nbproject/Makefile-variables.mk', line 16)
+CND_PACKAGE_PATH_Debug = dist/Debug/Cygwin-Windows/package/prog.avanzlab3-casodeuso1.tar
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'nbproject/Makefile-variables.mk', line 6)
+CND_BASEDIR = `pwd`
+# makefile (from 'nbproject/Makefile-variables.mk', line 11)
+CND_ARTIFACT_DIR_Debug = dist/Debug/Cygwin-Windows
+# makefile (from 'nbproject/Makefile-variables.mk', line 20)
+CND_ARTIFACT_NAME_Release = prog.avanz_lab3-casodeuso1
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\laptopwin\AppData\Roaming\Code\CachedData\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+# makefile (from 'nbproject/Makefile-impl.mk', line 27)
+PROJECTNAME = Prog.Avanz_Lab3-CasoDeUso1
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /cygdrive/c/Users/LAPTOP~1/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'nbproject/Makefile-variables.mk', line 14)
+CND_PACKAGE_DIR_Debug = dist/Debug/Cygwin-Windows/package
+# environment
+ONEDRIVE = C:\Users\laptopwin\OneDrive
+# makefile
+CURDIR := /cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+ 
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\laptopwin\OneDrive\Escritorio\Prog.Avanz_Lab3-CasoDeUso1
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'nbproject/private/Makefile-variables.mk', line 1)
+MAKEFILE_LIST := Makefile nbproject/Makefile-impl.mk nbproject/Makefile-variables.mk nbproject/private/Makefile-variables.mk
+# makefile (from 'nbproject/Makefile-variables.mk', line 21)
+CND_ARTIFACT_PATH_Release = dist/Release/Cygwin-Windows/prog.avanz_lab3-casodeuso1
+# automatic
+@F = $(notdir $@)
+# makefile (from 'nbproject/Makefile-variables.mk', line 23)
+CND_PACKAGE_NAME_Release = prog.avanzlab3-casodeuso1.tar
+# environment
+VSCODE_PID = 2916
+# makefile (from 'Makefile', line 50)
+CCADMIN = CCadmin
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 49)
+CP = cp
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"0d0559e57c1073718f3b3dcc46dc7c83.es","_translationsConfigFile":"C:\\Users\\laptopwin\\AppData\\Roaming\\Code\\clp\\0d0559e57c1073718f3b3dcc46dc7c83.es\\tcf.json","_cacheRoot":"C:\\Users\\laptopwin\\AppData\\Roaming\\Code\\clp\\0d0559e57c1073718f3b3dcc46dc7c83.es","_resolvedLanguagePackCoreLocation":"C:\\Users\\laptopwin\\AppData\\Roaming\\Code\\clp\\0d0559e57c1073718f3b3dcc46dc7c83.es\\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"C:\\Users\\laptopwin\\AppData\\Roaming\\Code\\clp\\0d0559e57c1073718f3b3dcc46dc7c83.es\\corrupted.info","_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\laptopwin\OneDrive
+# default
+MAKE_HOST := x86_64-pc-cygwin
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\laptopwin
+# default
+MAKECMDGOALS := all
+# makefile (from 'nbproject/Makefile-variables.mk', line 15)
+CND_PACKAGE_NAME_Debug = prog.avanzlab3-casodeuso1.tar
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# makefile (from 'nbproject/Makefile-impl.mk', line 20)
+BUILD_SUBPROJECTS = ${BUILD_SUBPROJECTS_${SUBPROJECTS}}
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# makefile (from 'nbproject/Makefile-impl.mk', line 19)
+BUILD_SUBPROJECTS_NO = 
+# makefile (from 'Makefile', line 48)
+MKDIR = mkdir
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /cygdrive/c/Program Files/Common Files/Oracle/Java/javapath:/cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/Java/jdk1.8.0_321:/cygdrive/c/Program Files/Java/jdk1.8.0_321:/cygdrive/c/Program Files/Git/cmd:/:/usr/bin:/cygdrive/c/Users/laptopwin/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/laptopwin/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/laptopwin/AppData/Local/GitHubDesktop/bin
+# environment
+COMPUTERNAME = CRISTIAN-GONZAL
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+QT_DEVICE_PIXEL_RATIO = auto
+# environment
+LOGONSERVER = \\CRISTIAN-GONZAL
+# environment
+USERNAME = laptopwin
+# makefile (from 'nbproject/Makefile-variables.mk', line 24)
+CND_PACKAGE_PATH_Release = dist/Release/Cygwin-Windows/package/prog.avanzlab3-casodeuso1.tar
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# makefile (from 'nbproject/Makefile-variables.mk', line 18)
+CND_PLATFORM_Release = Cygwin-Windows
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from 'nbproject/Makefile-variables.mk', line 22)
+CND_PACKAGE_DIR_Release = dist/Release/Cygwin-Windows/package
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = CRISTIAN-GONZAL
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile (from 'nbproject/Makefile-variables.mk', line 19)
+CND_ARTIFACT_DIR_Release = dist/Release/Cygwin-Windows
+# makefile
+.DEFAULT_GOAL := build
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# makefile (from 'nbproject/Makefile-variables.mk', line 7)
+CND_BUILDDIR = build
+# environment
+USERDOMAIN_ROAMINGPROFILE = CRISTIAN-GONZAL
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# makefile (from 'nbproject/Makefile-impl.mk', line 31)
+CONF = ${DEFAULTCONF}
+# makefile (from 'nbproject/Makefile-impl.mk', line 30)
+DEFAULTCONF = Debug
+# environment
+APPDATA = C:\Users\laptopwin\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/laptopwin
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# makefile (from 'nbproject/Makefile-impl.mk', line 16)
+SUB_no = NO
+# makefile (from 'nbproject/Makefile-impl.mk', line 22)
+CLEAN_SUBPROJECTS_NO = 
+# makefile (from 'nbproject/Makefile-impl.mk', line 23)
+CLEAN_SUBPROJECTS = ${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /cygdrive/c/Users/LAPTOP~1/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\c0e1510121a5103bb1f78dd6a523b968-1.69.0-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'nbproject/Makefile-impl.mk', line 34)
+ALLCONFS = Debug Release 
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+PT7HOME = C:\Program Files\Cisco Packet Tracer 7.3.1
+# makefile (from 'nbproject/Makefile-impl.mk', line 17)
+SUBPROJECTS = ${SUB_${SUB}}
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+PROCESSOR_REVISION = 8e0a
+# makefile (from 'nbproject/Makefile-variables.mk', line 10)
+CND_PLATFORM_Debug = Cygwin-Windows
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+# makefile (from 'nbproject/Makefile-impl.mk', line 21)
+CLEAN_SUBPROJECTS_ = .clean-subprojects
+# variable set hash-table stats:
+ 
+# Load=128/1024=12%, Rehash=0, Collisions=17/169=10%
+
+# Pattern-specific Variable Values
+
+ 
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 3360161136, inode 24769797950656039): 100 files, no impossibilities.
+
+# 100 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+.clean-impl: .clean-pre .validate-impl .depcheck-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 45):
+	@#echo "=> Running $@... Configuration=$(CONF)"
+	"${MAKE}" -f nbproject/Makefile-${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .clean-conf
+
+.test-post: .test-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.validate-impl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 90):
+	@if [ ! -f nbproject/Makefile-${CONF}.mk ]; \
+	then \
+	    echo ""; \
+	    echo "Error: can not find the makefile for configuration '${CONF}' in project ${PROJECTNAME}"; \
+	    echo "See 'make help' for details."; \
+	    echo "Current directory: " `pwd`; \
+	    echo ""; \
+	fi
+	@if [ ! -f nbproject/Makefile-${CONF}.mk ]; \
+	then \
+	    exit 1; \
+	fi
+
+# makefile (from 'nbproject/Makefile-variables.mk', line 29)
+ROOT: sh = test -f nbproject/private/Makefile-variables.mk || (mkdir -p nbproject/private && touch nbproject/private/Makefile-variables.mk)
+# Not a target:
+ROOT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+
+.build-impl: .build-pre .validate-impl .depcheck-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 39):
+	@#echo "=> Running $@... Configuration=$(CONF)"
+	"${MAKE}" -f nbproject/Makefile-${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .build-conf
+ 
+
+.build-post: .build-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.all-post: .all-impl
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+.help-post: .help-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.help-impl: .help-pre
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 106):
+	@echo "This makefile supports the following configurations:"
+	@echo "    ${ALLCONFS}"
+	@echo ""
+	@echo "and the following targets:"
+	@echo "    build  (default target)"
+	@echo "    clean"
+	@echo "    clobber"
+	@echo "    all"
+	@echo "    help"
+	@echo ""
+	@echo "Makefile Usage:"
+	@echo "    make [CONF=<CONFIGURATION>] [SUB=no] build"
+	@echo "    make [CONF=<CONFIGURATION>] [SUB=no] clean"
+	@echo "    make [SUB=no] clobber"
+	@echo "    make [SUB=no] all"
+	@echo "    make help"
+	@echo ""
+	@echo "Target 'build' will build a specific configuration and, unless 'SUB=no',"
+	@echo "    also build subprojects."
+	@echo "Target 'clean' will clean a specific configuration and, unless 'SUB=no',"
+	@echo "    also clean subprojects."
+	@echo "Target 'clobber' will remove all built files from all configurations and,"
+ 
+	@echo "    unless 'SUB=no', also from subprojects."
+	@echo "Target 'all' will will build all configurations and, unless 'SUB=no',"
+	@echo "    also build subprojects."
+	@echo "Target 'help' prints this message."
+	@echo ""
+
+.clean-post: .clean-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 20:53:39
+#  File has been updated.
+#  Successfully updated.
+
+.build-tests-post: .build-tests-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: .clean-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.clean-pre:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.build-pre:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+nbproject/private/Makefile-variables.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 20:53:39
+#  File has been updated.
+#  Successfully updated.
+
+.all-pre:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: .all-post
+ 
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+help: .help-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.depcheck-impl:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := .depcheck-impl
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+ 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=6/12=50%
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 77):
+	@echo "# This code depends on make tool being used" >.dep.inc
+	@if [ -n "${MAKE_VERSION}" ]; then \
+	    echo "DEPFILES=\$$(wildcard \$$(addsuffix .d, \$${OBJECTFILES} \$${TESTOBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\$${DEPFILES},)" >>.dep.inc; \
+	    echo "include \$${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\$${CONF}" >>.dep.inc; \
+	fi
+
+.help-pre:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build: .build-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+nbproject/Makefile-variables.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 21:10:57.2306472
+#  File has been updated.
+#  Successfully updated.
+
+.clobber-post: .clobber-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: .test-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.build-tests-impl: .build-impl .build-tests-pre
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 67):
+	@#echo "=> Running $@... Configuration=$(CONF)"
+	"${MAKE}" -f nbproject/Makefile-${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .build-tests-conf
+
+.clobber-pre:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clobber: .clobber-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+nbproject/Makefile-impl.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 21:10:57.0261933
+#  File has been updated.
+#  Successfully updated.
+
+.all-impl: .all-pre .depcheck-impl
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 59):
+	@#echo "=> Running $@..."
+	for CONF in ${ALLCONFS}; \
+	do \
+	    "${MAKE}" -f nbproject/Makefile-$${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .build-conf; \
+	done
+
+.clobber-impl: .clobber-pre .depcheck-impl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 51):
+	@#echo "=> Running $@..."
+	for CONF in ${ALLCONFS}; \
+	do \
+	    "${MAKE}" -f nbproject/Makefile-$${CONF}.mk QMAKE=${QMAKE} SUBPROJECTS=${SUBPROJECTS} .clean-conf; \
+	done
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+.test-impl: .build-tests-impl .test-pre
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'nbproject/Makefile-impl.mk', line 72):
+	@#echo "=> Running $@... Configuration=$(CONF)"
+	"${MAKE}" -f nbproject/Makefile-${CONF}.mk SUBPROJECTS=${SUBPROJECTS} .test-conf
+
+build-tests: .build-tests-post
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.test-pre: build-tests
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.build-tests-pre:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=38/1024=4%, Rehash=0, Collisions=3/100=3%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 137 / storage = 1955 B / avg = 14 B
+# current buf: size = 8162 B / used = 1955 B / count = 137 / avg = 14 B
+
+# strcache performance: lookups = 209 / hit rate = 34%
+# hash-table stats:
+ 
+# Load=137/8192=2%, Rehash=0, Collisions=2/209=1%
+# Finished Make data base on Tue Jul 12 21:17:09 2022
+
+ 

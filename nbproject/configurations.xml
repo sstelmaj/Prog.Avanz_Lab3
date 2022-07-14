@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="clases" projectFiles="true">
+        <itemPath>Categoria.h</itemPath>
+        <itemPath>Comentario.h</itemPath>
+        <itemPath>Estadistica.h</itemPath>
+        <itemPath>Historial.h</itemPath>
+        <itemPath>Partida.h</itemPath>
+        <itemPath>Suscripcion.h</itemPath>
+        <itemPath>Usuario.h</itemPath>
+        <itemPath>Videojuego.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Collection" projectFiles="true">
+        <itemPath>ICollectible.h</itemPath>
+        <itemPath>ICollection.h</itemPath>
+        <itemPath>IDictionary.h</itemPath>
+        <itemPath>IIterator.h</itemPath>
+        <itemPath>IKey.h</itemPath>
+        <itemPath>KeyInt.h</itemPath>
+        <itemPath>KeyString.h</itemPath>
+        <itemPath>ListDiccIterator.h</itemPath>
+        <itemPath>ListDiccIteratorKey.h</itemPath>
+        <itemPath>ListDiccIteratorObj.h</itemPath>
+        <itemPath>Lista.h</itemPath>
+        <itemPath>ListaDicc.h</itemPath>
+        <itemPath>ListaIterator.h</itemPath>
+        <itemPath>Nodo.h</itemPath>
+        <itemPath>NodoDicc.h</itemPath>
+        <itemPath>Par.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Controladores" projectFiles="true">
+        <itemPath>Controlador_Autenticacion.h</itemPath>
+        <itemPath>Controlador_Desarrollador.h</itemPath>
+        <itemPath>Controlador_Jugador.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="DataType" projectFiles="true">
+        <itemPath>DataComentario.h</itemPath>
+        <itemPath>DataJuegos.h</itemPath>
+        <itemPath>DataPartidas.h</itemPath>
+        <itemPath>DataPartidasUnidas.h</itemPath>
+        <itemPath>DataUsuario.h</itemPath>
+        <itemPath>DataVideojuegoCU11.h</itemPath>
+        <itemPath>DataVideojuegosCU5.h</itemPath>
+        <itemPath>DtDate.h</itemPath>
+        <itemPath>DtPartidasSinTerminar.h</itemPath>
+        <itemPath>DtTime.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f7" displayName="DSS" projectFiles="true">
+        <itemPath>CU1.h</itemPath>
+        <itemPath>CU2.h</itemPath>
+        <itemPath>CU3.h</itemPath>
+        <itemPath>CU4.h</itemPath>
+        <itemPath>CU8.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
+        <itemPath>Fabrica.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Interfaces" projectFiles="true">
+        <itemPath>Interface_Desarrollador.h</itemPath>
+        <itemPath>Interface_InicioSesion.h</itemPath>
+        <itemPath>Interface_Jugador.h</itemPath>
+      </logicalFolder>
+      <itemPath>Servicio_Videojuego.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="clases" projectFiles="true">
+        <itemPath>Categoria.cpp</itemPath>
+        <itemPath>Comentario.cpp</itemPath>
+        <itemPath>Estadistica.cpp</itemPath>
+        <itemPath>Historial.cpp</itemPath>
+        <itemPath>Partida.cpp</itemPath>
+        <itemPath>Suscripcion.cpp</itemPath>
+        <itemPath>Usuario.cpp</itemPath>
+        <itemPath>Videojuego.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Collection" projectFiles="true">
+        <itemPath>ICollectible.cpp</itemPath>
+        <itemPath>IDictionary.cpp</itemPath>
+        <itemPath>IKey.cpp</itemPath>
+        <itemPath>KeyInt.cpp</itemPath>
+        <itemPath>KeyString.cpp</itemPath>
+        <itemPath>ListDiccIterator.cpp</itemPath>
+        <itemPath>ListDiccIteratorKey.cpp</itemPath>
+        <itemPath>ListDiccIteratorObj.cpp</itemPath>
+        <itemPath>Lista.cpp</itemPath>
+        <itemPath>ListaDicc.cpp</itemPath>
+        <itemPath>ListaIterator.cpp</itemPath>
+        <itemPath>Nodo.cpp</itemPath>
+        <itemPath>NodoDicc.cpp</itemPath>
+        <itemPath>Par.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Controladores" projectFiles="true">
+        <itemPath>Controlador_Autenticacion.cpp</itemPath>
+        <itemPath>Controlador_Desarrollador.cpp</itemPath>
+        <itemPath>Controlador_Jugador.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="DataType" projectFiles="true">
+        <itemPath>DataComentario.cpp</itemPath>
+        <itemPath>DataJuegos.cpp</itemPath>
+        <itemPath>DataPartidas.cpp</itemPath>
+        <itemPath>DataPartidasUnidas.cpp</itemPath>
+        <itemPath>DataUsuario.cpp</itemPath>
+        <itemPath>DataVideojuegoCU11.cpp</itemPath>
+        <itemPath>DataVideojuegosCU5.cpp</itemPath>
+        <itemPath>DtDate.cpp</itemPath>
+        <itemPath>DtPartidasSinTerminar.cpp</itemPath>
+        <itemPath>DtTime.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="DSS" projectFiles="true">
+        <itemPath>CU1.cpp</itemPath>
+        <itemPath>CU2.cpp</itemPath>
+        <itemPath>CU3.cpp</itemPath>
+        <itemPath>CU4.cpp</itemPath>
+        <itemPath>CU8.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
+        <itemPath>Fabrica.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>Servicio_Videojuego.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="CU1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU8.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Categoria.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Comentario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Comentario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Autenticacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Autenticacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Desarrollador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Desarrollador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Jugador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Jugador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataComentario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataComentario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataJuegos.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataJuegos.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataVideojuegoCU11.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataVideojuegoCU11.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataVideojuegosCU5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataVideojuegosCU5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtDate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtDate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtPartidasSinTerminar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtPartidasSinTerminar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtTime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtTime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estadistica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estadistica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fabrica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Historial.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Historial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICollectible.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ICollectible.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICollection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IDictionary.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IDictionary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IKey.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IKey.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_Desarrollador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_InicioSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_Jugador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyInt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KeyInt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyString.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KeyString.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorKey.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorKey.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorObj.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorObj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lista.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaDicc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaDicc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Nodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NodoDicc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodoDicc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Par.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Par.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Partida.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Partida.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Suscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Suscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Usuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Usuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Videojuego.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="CU1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU8.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Categoria.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Comentario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Comentario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Autenticacion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Autenticacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Desarrollador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Desarrollador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Controlador_Jugador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Controlador_Jugador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataComentario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataComentario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataJuegos.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataJuegos.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataVideojuegoCU11.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataVideojuegoCU11.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataVideojuegosCU5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataVideojuegosCU5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtDate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtDate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtPartidasSinTerminar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtPartidasSinTerminar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtTime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtTime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Estadistica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Estadistica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fabrica.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Historial.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Historial.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICollectible.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ICollectible.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICollection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IDictionary.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IDictionary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IKey.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IKey.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_Desarrollador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_InicioSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interface_Jugador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyInt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KeyInt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KeyString.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KeyString.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorKey.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorKey.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorObj.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListDiccIteratorObj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lista.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaDicc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaDicc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Nodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NodoDicc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodoDicc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Par.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Par.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Partida.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Partida.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Servicio_Videojuego.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Suscripcion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Suscripcion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Usuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Usuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Videojuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Videojuego.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

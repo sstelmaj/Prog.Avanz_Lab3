@@ -1,0 +1,206 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
+if [ ! -f nbproject/Makefile-Debug.mk ]; \
+then \
+    echo ""; \
+    echo "Error: can not find the makefile for configuration 'Debug' in project Prog.Avanz_Lab3-CasoDeUso1"; \
+    echo "See 'make help' for details."; \
+    echo "Current directory: " `pwd`; \
+    echo ""; \
+fi
+if [ ! -f nbproject/Makefile-Debug.mk ]; \
+then \
+    exit 1; \
+fi
+echo "# This code depends on make tool being used" >.dep.inc
+if [ -n "4.3" ]; then \
+    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES} \${TESTOBJECTFILES}))" >>.dep.inc; \
+    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+    echo "include \${DEPFILES}" >>.dep.inc; \
+    echo "endif" >>.dep.inc; \
+else \
+    echo ".KEEP_STATE:" >>.dep.inc; \
+    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+fi
+#echo "=> Running .build-impl... Configuration=Debug"
+"make" -f nbproject/Makefile-Debug.mk QMAKE= SUBPROJECTS= .build-conf
+ 
+make[1]: Entering directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
+"make"  -f nbproject/Makefile-Debug.mk dist/Debug/Cygwin-Windows/prog.avanz_lab3-casodeuso1.exe
+ 
+make[2]: Entering directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/CU1.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/CU1.o.d" -o build/Debug/Cygwin-Windows/CU1.o CU1.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/CU2.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/CU2.o.d" -o build/Debug/Cygwin-Windows/CU2.o CU2.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/CU3.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/CU3.o.d" -o build/Debug/Cygwin-Windows/CU3.o CU3.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/CU4.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/CU4.o.d" -o build/Debug/Cygwin-Windows/CU4.o CU4.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Categoria.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Categoria.o.d" -o build/Debug/Cygwin-Windows/Categoria.o Categoria.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Comentario.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Comentario.o.d" -o build/Debug/Cygwin-Windows/Comentario.o Comentario.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Controlador_Autenticacion.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Controlador_Autenticacion.o.d" -o build/Debug/Cygwin-Windows/Controlador_Autenticacion.o Controlador_Autenticacion.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Controlador_Desarrollador.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Controlador_Desarrollador.o.d" -o build/Debug/Cygwin-Windows/Controlador_Desarrollador.o Controlador_Desarrollador.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Controlador_Jugador.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Controlador_Jugador.o.d" -o build/Debug/Cygwin-Windows/Controlador_Jugador.o Controlador_Jugador.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataComentario.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataComentario.o.d" -o build/Debug/Cygwin-Windows/DataComentario.o DataComentario.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataJuegos.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataJuegos.o.d" -o build/Debug/Cygwin-Windows/DataJuegos.o DataJuegos.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataPartidas.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataPartidas.o.d" -o build/Debug/Cygwin-Windows/DataPartidas.o DataPartidas.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataUsuario.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataUsuario.o.d" -o build/Debug/Cygwin-Windows/DataUsuario.o DataUsuario.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataVideojuegoCU11.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataVideojuegoCU11.o.d" -o build/Debug/Cygwin-Windows/DataVideojuegoCU11.o DataVideojuegoCU11.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DataVideojuegosCU5.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DataVideojuegosCU5.o.d" -o build/Debug/Cygwin-Windows/DataVideojuegosCU5.o DataVideojuegosCU5.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DtDate.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DtDate.o.d" -o build/Debug/Cygwin-Windows/DtDate.o DtDate.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DtPartidasSinTerminar.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DtPartidasSinTerminar.o.d" -o build/Debug/Cygwin-Windows/DtPartidasSinTerminar.o DtPartidasSinTerminar.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/DtTime.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/DtTime.o.d" -o build/Debug/Cygwin-Windows/DtTime.o DtTime.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Estadistica.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Estadistica.o.d" -o build/Debug/Cygwin-Windows/Estadistica.o Estadistica.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Fabrica.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Fabrica.o.d" -o build/Debug/Cygwin-Windows/Fabrica.o Fabrica.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Historial.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Historial.o.d" -o build/Debug/Cygwin-Windows/Historial.o Historial.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+ 
+rm -f "build/Debug/Cygwin-Windows/ICollectible.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ICollectible.o.d" -o build/Debug/Cygwin-Windows/ICollectible.o ICollectible.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/IDictionary.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/IDictionary.o.d" -o build/Debug/Cygwin-Windows/IDictionary.o IDictionary.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/IKey.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/IKey.o.d" -o build/Debug/Cygwin-Windows/IKey.o IKey.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/KeyInt.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/KeyInt.o.d" -o build/Debug/Cygwin-Windows/KeyInt.o KeyInt.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/KeyString.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/KeyString.o.d" -o build/Debug/Cygwin-Windows/KeyString.o KeyString.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/ListDiccIterator.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ListDiccIterator.o.d" -o build/Debug/Cygwin-Windows/ListDiccIterator.o ListDiccIterator.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/ListDiccIteratorKey.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ListDiccIteratorKey.o.d" -o build/Debug/Cygwin-Windows/ListDiccIteratorKey.o ListDiccIteratorKey.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/ListDiccIteratorObj.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ListDiccIteratorObj.o.d" -o build/Debug/Cygwin-Windows/ListDiccIteratorObj.o ListDiccIteratorObj.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Lista.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Lista.o.d" -o build/Debug/Cygwin-Windows/Lista.o Lista.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/ListaDicc.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ListaDicc.o.d" -o build/Debug/Cygwin-Windows/ListaDicc.o ListaDicc.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/ListaIterator.o.d"
+ 
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/ListaIterator.o.d" -o build/Debug/Cygwin-Windows/ListaIterator.o ListaIterator.cpp
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Nodo.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Nodo.o.d" -o build/Debug/Cygwin-Windows/Nodo.o Nodo.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/NodoDicc.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/NodoDicc.o.d" -o build/Debug/Cygwin-Windows/NodoDicc.o NodoDicc.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Par.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Par.o.d" -o build/Debug/Cygwin-Windows/Par.o Par.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Partida_1.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Partida_1.o.d" -o build/Debug/Cygwin-Windows/Partida_1.o Partida_1.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Servicio_Videojuego.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Servicio_Videojuego.o.d" -o build/Debug/Cygwin-Windows/Servicio_Videojuego.o Servicio_Videojuego.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Suscripcion.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Suscripcion.o.d" -o build/Debug/Cygwin-Windows/Suscripcion.o Suscripcion.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Usuario.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Usuario.o.d" -o build/Debug/Cygwin-Windows/Usuario.o Usuario.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/Videojuego.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/Videojuego.o.d" -o build/Debug/Cygwin-Windows/Videojuego.o Videojuego.cpp
+ 
+mkdir -p build/Debug/Cygwin-Windows
+rm -f "build/Debug/Cygwin-Windows/main.o.d"
+g++    -c -g -MMD -MP -MF "build/Debug/Cygwin-Windows/main.o.d" -o build/Debug/Cygwin-Windows/main.o main.cpp
+ 
+mkdir -p dist/Debug/Cygwin-Windows
+g++     -o dist/Debug/Cygwin-Windows/prog.avanz_lab3-casodeuso1 build/Debug/Cygwin-Windows/CU1.o build/Debug/Cygwin-Windows/CU2.o build/Debug/Cygwin-Windows/CU3.o build/Debug/Cygwin-Windows/CU4.o build/Debug/Cygwin-Windows/Categoria.o build/Debug/Cygwin-Windows/Comentario.o build/Debug/Cygwin-Windows/Controlador_Autenticacion.o build/Debug/Cygwin-Windows/Controlador_Desarrollador.o build/Debug/Cygwin-Windows/Controlador_Jugador.o build/Debug/Cygwin-Windows/DataComentario.o build/Debug/Cygwin-Windows/DataJuegos.o build/Debug/Cygwin-Windows/DataPartidas.o build/Debug/Cygwin-Windows/DataUsuario.o build/Debug/Cygwin-Windows/DataVideojuegoCU11.o build/Debug/Cygwin-Windows/DataVideojuegosCU5.o build/Debug/Cygwin-Windows/DtDate.o build/Debug/Cygwin-Windows/DtPartidasSinTerminar.o build/Debug/Cygwin-Windows/DtTime.o build/Debug/Cygwin-Windows/Estadistica.o build/Debug/Cygwin-Windows/Fabrica.o build/Debug/Cygwin-Windows/Historial.o build/Debug/Cygwin-Windows/ICollectible.o build/Debug/Cygwin-Windows/IDictionary.o build/Debug/Cygwin-Windows/IKey.o build/Debug/Cygwin-Windows/KeyInt.o build/Debug/Cygwin-Windows/KeyString.o build/Debug/Cygwin-Windows/ListDiccIterator.o build/Debug/Cygwin-Windows/ListDiccIteratorKey.o build/Debug/Cygwin-Windows/ListDiccIteratorObj.o build/Debug/Cygwin-Windows/Lista.o build/Debug/Cygwin-Windows/ListaDicc.o build/Debug/Cygwin-Windows/ListaIterator.o build/Debug/Cygwin-Windows/Nodo.o build/Debug/Cygwin-Windows/NodoDicc.o build/Debug/Cygwin-Windows/Par.o build/Debug/Cygwin-Windows/Partida_1.o build/Debug/Cygwin-Windows/Servicio_Videojuego.o build/Debug/Cygwin-Windows/Suscripcion.o build/Debug/Cygwin-Windows/Usuario.o build/Debug/Cygwin-Windows/Videojuego.o build/Debug/Cygwin-Windows/main.o 
+make[2]: Leaving directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
+make[1]: Leaving directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
+make: Leaving directory '/cygdrive/c/Users/laptopwin/OneDrive/Escritorio/Prog.Avanz_Lab3-CasoDeUso1'
+ 
