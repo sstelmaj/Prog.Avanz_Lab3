@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Prog.Avanz_Lab3
+PROJECTNAME=Laboratorio_4
 
 # Active Configuration
 DEFAULTCONF=Debug

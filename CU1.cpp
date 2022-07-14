@@ -5,17 +5,11 @@
  */
 #include "Usuario.h"
 #include "Controlador_Autenticacion.h"
-//#include "Controlador_Desarrollador.h"
-//#include "Controlador_Jugador.h"
 #include "Fabrica.h"
 #include "DataUsuario.h"
 #include "CU1.h"
 
 using namespace std;
-
-
-
-//ESTO ES COMENTARIO DE SEBA
 
 
 void AltaDeUsuario(){

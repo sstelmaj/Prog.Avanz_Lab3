@@ -34,4 +34,8 @@ int DtDate::getDia(){
     return this->dia;
 }
 
+void DtDate::toString(){
+    cout<<this->dia<<"/"<<this->mes<<"/"<<this->anio;
+}
+
 

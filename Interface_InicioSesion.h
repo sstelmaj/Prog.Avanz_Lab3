@@ -32,6 +32,12 @@ public:
         virtual bool IniciarSesion(string,string)=0;
 	virtual void CancelarSesion()=0;
 	//virtual void RegistrarUsuario()=0;
+        
+        virtual void ObtenerJugadores(string)=0;
+        virtual void agregarPartida(Partida*)=0;
+        virtual Jugador* NicknameJugadoresUnirPartida(string)=0;
+        
+        virtual void cargarDatosPrueba()=0;
 /*
 	
 	virtual Usuario* getUsuario()=0;

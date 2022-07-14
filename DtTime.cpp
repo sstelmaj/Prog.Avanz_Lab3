@@ -34,3 +34,7 @@ int DtTime::getsegundos(){
     return this->segundos;
 }
 
+void DtTime::toString(){
+    cout<<this->segundos<<":"<<this->minutos<<":"<<this->hora;
+}
+

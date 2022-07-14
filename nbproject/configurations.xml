@@ -41,6 +41,7 @@
         <itemPath>DataComentario.h</itemPath>
         <itemPath>DataJuegos.h</itemPath>
         <itemPath>DataPartidas.h</itemPath>
+        <itemPath>DataPartidasUnidas.h</itemPath>
         <itemPath>DataUsuario.h</itemPath>
         <itemPath>DataVideojuegoCU11.h</itemPath>
         <itemPath>DataVideojuegosCU5.h</itemPath>
@@ -53,6 +54,10 @@
         <itemPath>CU2.h</itemPath>
         <itemPath>CU3.h</itemPath>
         <itemPath>CU4.h</itemPath>
+        <itemPath>CU5.h</itemPath>
+        <itemPath>CU6.h</itemPath>
+        <itemPath>CU7.h</itemPath>
+        <itemPath>CU8.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
         <itemPath>Fabrica.h</itemPath>
@@ -106,6 +111,7 @@
         <itemPath>DataComentario.cpp</itemPath>
         <itemPath>DataJuegos.cpp</itemPath>
         <itemPath>DataPartidas.cpp</itemPath>
+        <itemPath>DataPartidasUnidas.cpp</itemPath>
         <itemPath>DataUsuario.cpp</itemPath>
         <itemPath>DataVideojuegoCU11.cpp</itemPath>
         <itemPath>DataVideojuegosCU5.cpp</itemPath>
@@ -118,6 +124,10 @@
         <itemPath>CU2.cpp</itemPath>
         <itemPath>CU3.cpp</itemPath>
         <itemPath>CU4.cpp</itemPath>
+        <itemPath>CU5.cpp</itemPath>
+        <itemPath>CU6.cpp</itemPath>
+        <itemPath>CU7.cpp</itemPath>
+        <itemPath>CU8.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Fabrica" projectFiles="true">
         <itemPath>Fabrica.cpp</itemPath>
@@ -163,6 +173,22 @@
       </item>
       <item path="CU4.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CU5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU6.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU6.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU7.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU8.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Categoria.h" ex="false" tool="3" flavor2="0">
@@ -194,6 +220,10 @@
       <item path="DataPartidas.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="DataPartidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="DataUsuario.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -356,6 +386,22 @@
       </item>
       <item path="CU4.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CU5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU6.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU6.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU7.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CU8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CU8.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Categoria.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Categoria.h" ex="false" tool="3" flavor2="0">
@@ -387,6 +433,10 @@
       <item path="DataPartidas.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="DataPartidas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataPartidasUnidas.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="DataUsuario.cpp" ex="false" tool="1" flavor2="0">
       </item>

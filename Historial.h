@@ -26,6 +26,7 @@ typedef enum MetodoPago{
 class Historial : public ICollectible  {
 public:
     Historial();
+    Historial(DtTime*, DtDate*, MetodoPago);
     Historial(const Historial& orig);
     virtual ~Historial();
     
@@ -38,7 +39,7 @@ public:
 private:
     DtTime* hora;
     DtDate* fecha;
-    //metodoPago metodoPago;
+    MetodoPago metodoPago;
 };
 
 #endif /* HISTORIAL_H */

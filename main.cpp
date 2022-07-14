@@ -16,6 +16,11 @@
 #include "CU3.h"
 #include "CU2.h"
 #include "CU4.h"
+#include "CU5.h"
+#include "CU6.h"
+#include "CU7.h"
+#include "CU8.h"
+#include "Fabrica.h"
 
 using namespace std;
 
@@ -24,14 +29,16 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     fabrica* Fabrica;
-   
-    AgregarCategoria();
-    AgregarCategoria();
-    AgregarCategoria();
+    Fabrica->getInterfaceusuario()->cargarDatosPrueba();
+    Fabrica->getInterfaceD()->cargarDatosPrueba();
     
-   PublicarVideoJuego();
-   
+    IniciarSesion();
     
+    SuscribirseAVideojuego();
+
+    iniciarPartida();
+    
+    FinalizarPartida();
     
     
     //int opcion;

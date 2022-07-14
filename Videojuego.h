@@ -13,12 +13,15 @@
 #ifndef VIDEOJUEGO_H
 #define VIDEOJUEGO_H
 
+
 #include <string>
-#include "Suscripcion.h"
-#include "Categoria.h"
 #include "IDictionary.h"
 #include "ICollectible.h"
 #include "ICollection.h"
+#include "Categoria.h"
+
+
+
 
 using namespace std;
 
@@ -36,10 +39,14 @@ public:
     void setDescripcion(string);
     void setPromedio(int);
     
+    ICollection* listarSuscripciones();
+    
     void AsociarSuscripcion(ICollection *);
     void AgregarCategorias(ICollection *);
     ICollection* ListarInformacionVideojuego();
     ICollection* ObtenerSumaHoras();
+    
+    
 private:
     string nombre;
     string descripcion;

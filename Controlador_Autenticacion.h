@@ -46,12 +46,20 @@ public:
         bool IniciarSesion(string,string);
         
         void setUsuario(Usuario*);
+        Usuario* getUsu();
+
+        void cargarDatosPrueba();
+        
+        //CU6
+        Jugador* NicknameJugadoresUnirPartida(string);
+        void ObtenerJugadores(string);
+        void agregarPartida(Partida*);
 
 private:
         ControladorUsuario();
 	static ControladorUsuario* instance;
 	IDictionary* usuarios; // controladora tiene una coleccion de usuarios
-	Usuario* usu; // un usuario
+	Usuario* usu=new Jugador("prueba@gmail.com", "123", "senior Prueba", "Usado en pruebas"); // un usuario
         DataUsuario* dataUsuarioTemporal;
 };
 

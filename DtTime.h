@@ -25,6 +25,8 @@ public:
     int getminutos();
     int getsegundos();
     virtual ~DtTime();
+    
+    void toString();
 private:
     int hora,minutos,segundos;
 };

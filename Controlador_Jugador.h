@@ -19,16 +19,48 @@
 #include "IDictionary.h"
 #include "Usuario.h"
 #include "ICollectible.h"
+#include "Servicio_Videojuego.h"
+#include "Historial.h"
+#include "Controlador_Autenticacion.h"
 
 
 #include <string>
 using namespace std;
 
-class ControladorJugador :public InterfaceJugador{
+class ControladorJugador : public InterfaceJugador{
 public:
 	
 	static ControladorJugador* getInstance();
         virtual ~ControladorJugador();	
+        
+        ICollection* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
+	ICollection* ListarVideojuegosSuscripciones();//:set(DataVideojuegosCU5);
+	void IngresarNombreVideojuego(string);
+	void CancelarSuscripcion(Videojuego*);
+	void IngresarTipoSuscripcion(TipoSuscripcion);
+	void IngresarMetodoPago(MetodoPago);
+        void IngresarTiempoValidez(TiempoValidez);
+	void CancelarCompra();
+	void ConfirmarAltaSuscripcion();
+        
+        //CASO DE USO 6
+        bool ListarVideoJuegosJugador();
+        void IngresarNombreVideoJuego(string);
+        ICollection* HistorialPartidasIndividualesFinalizadas();//:set(DatapartidasCU7);
+        void ContinuarPartida(int);
+        void TransmitirPartida(bool);
+        void UnirJugador(Jugador*);
+        Partida* AltaPartidaM();
+        Partida* AltaPartidaI();
+	void CancelarPartida();
+        
+        //CASO DE USO 7
+        IDictionary* ListarPartidasUnidas();
+        int ConfirmarAbandono(int);
+        
+        //CASO DE USO 8
+        ICollectible* ListarPartidasSinTerminar();
+        void FinalizarPartida(int);
 	
     /*
 	IDictionary* ListarVideojuegosSuscriptos();//:set(DataVideojuegosCU5)   
@@ -68,11 +100,25 @@ public:
 	
 	
 private:
+        Servicio_Videojuego* servicio;
+        ControladorUsuario* controladorU;
+    
         ControladorJugador();
 	static ControladorJugador* instance;
 	IDictionary* usuSeleccionados;
 	//IDictionary* jugador;
-	Usuario* usu;
+        
+        //TEMPORTALES CU5
+        string nombreJuegoTemporal;
+        TipoSuscripcion tipoSuscripcionTemporal;
+        MetodoPago metodoPagoTemporal;
+        TiempoValidez duracionSuscripcionTemporal;
+        
+        //TEMPORALES CU6
+        string Tnombre;
+        bool TTransmision;
+        IDictionary* Tunidos;
+        int cantPartidas;
 };
 
 #endif /* CONTROLADOR_JUGADOR_H */

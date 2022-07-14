@@ -39,6 +39,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/CU2.o \
 	${OBJECTDIR}/CU3.o \
 	${OBJECTDIR}/CU4.o \
+	${OBJECTDIR}/CU5.o \
+	${OBJECTDIR}/CU6.o \
+	${OBJECTDIR}/CU7.o \
+	${OBJECTDIR}/CU8.o \
 	${OBJECTDIR}/Categoria.o \
 	${OBJECTDIR}/Comentario.o \
 	${OBJECTDIR}/Controlador_Autenticacion.o \
@@ -47,6 +51,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/DataComentario.o \
 	${OBJECTDIR}/DataJuegos.o \
 	${OBJECTDIR}/DataPartidas.o \
+	${OBJECTDIR}/DataPartidasUnidas.o \
 	${OBJECTDIR}/DataUsuario.o \
 	${OBJECTDIR}/DataVideojuegoCU11.o \
 	${OBJECTDIR}/DataVideojuegosCU5.o \
@@ -96,11 +101,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/prog.avanz_lab3 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/laboratorio_4 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/CU1.o: CU1.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -121,6 +126,26 @@ ${OBJECTDIR}/CU4.o: CU4.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU4.o CU4.cpp
+
+${OBJECTDIR}/CU5.o: CU5.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU5.o CU5.cpp
+
+${OBJECTDIR}/CU6.o: CU6.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU6.o CU6.cpp
+
+${OBJECTDIR}/CU7.o: CU7.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU7.o CU7.cpp
+
+${OBJECTDIR}/CU8.o: CU8.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CU8.o CU8.cpp
 
 ${OBJECTDIR}/Categoria.o: Categoria.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -161,6 +186,11 @@ ${OBJECTDIR}/DataPartidas.o: DataPartidas.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DataPartidas.o DataPartidas.cpp
+
+${OBJECTDIR}/DataPartidasUnidas.o: DataPartidasUnidas.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DataPartidasUnidas.o DataPartidasUnidas.cpp
 
 ${OBJECTDIR}/DataUsuario.o: DataUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}

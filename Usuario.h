@@ -19,6 +19,11 @@
 #include "IDictionary.h"
 #include "ICollectible.h"
 #include "ICollection.h"
+#include "Lista.h"
+#include "Partida.h"
+
+#include "Videojuego.h"
+#include "Suscripcion.h"
 
 using namespace std;
 
@@ -69,19 +74,27 @@ public:
     void setNickname(string);
     void setDescripcion(string);
     
-    IDictionary* ListarVideojuegosSuscriptos();
-    IDictionary* ListarNombresVideojuegos();
-    void ConfirmarAltaSuscripcion();
-    void HistorialPartidasIndividualesFinalizadas(string);
+    void CancelarSuscripcion(Videojuego*);
+    
+    IDictionary* ListarPartidasMultijugador();
+    
+    
+    //CASO DE USO 8
+    IDictionary* ListarPartidasSinTerminar();
+    void FinalizarPartida(int);
+    
+    ICollection* ListarVideojuegosSuscriptos();
+    ICollection* ListarNombresVideojuegos();
+    void ConfirmarAltaSuscripcion(Suscripcion*);
+    IDictionary* HistorialPartidasIndividualesFinalizadas(string);
     void ContinuarPartida(int);
     void UnirJugador(Jugador);
     IDictionary* ObtenerJugadorConSuscripcion(string);
-    void AltaPartida();
+    void AltaPartida(Partida*);
     IDictionary* ListarInformacionPartida(string);
     void KickearJugador(int);
-    IDictionary* ListarPartidasSinTerminar();
+    
     void FinalizarPartida();
-    IDictionary* ListarPartidasMultijugador();
     IDictionary* ListarComentariosPartida(int);
     void ElegirComentario(int);
     void EnviarComentario();
@@ -93,7 +106,7 @@ private:
     string descripcion;
     IDictionary* jugadores;//Jugadores tiene una lista de jugadores
     IDictionary* partidas;//Jugadores tiene una lista de partidas
-    IDictionary* suscripciones;//Jugadores tiene una lista de suscripciones
+    ICollection* suscripciones;//Jugadores tiene una lista de suscripciones
     IDictionary* Historial;//Jugadores tiene una lista de historial de partidas
     };
 #endif /* USUARIO_H */

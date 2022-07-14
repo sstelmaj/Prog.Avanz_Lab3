@@ -1,25 +1,35 @@
 #ifndef SERVICIO_VIDEOJUEGO_H
 #define SERVICIO_VIDEOJUEGO_H
 #include "string.h"
-#include "Videojuego.h"
 #include "IDictionary.h"
 #include "ICollectible.h"
 #include "ICollection.h"
 #include "DataVideojuegoCU11.h"
+#include "Lista.h"
+
+#include "Usuario.h"
+
 using namespace std;
 
 class Servicio_Videojuego {
 public:
     Servicio_Videojuego* getInstance();
+    
     void agregarVideoJuego(Videojuego*);
     void ListarTodosVideoJuegos();
     virtual ~Servicio_Videojuego();
-    IDictionary* mostrar();
+    ICollection* mostrar();
     //DataVideojuegoCU11* ElegirVideoJuego(string);
     
+    ICollection* ListarVideojuegosSuscripciones(Jugador*);
+    ICollection* ListarVideojuegos();
+    
+    //CU6
+    Videojuego* MostrarVideoJuego(string);
+    
+    void CargarDatosPrueba();
     
     /*
-    ICollection* ListarVideojuegosSuscripciones();
     ICollection* ListarVideojuegosSuscriptos();
     void IngresarNombreVideojuego(string);
     ICollection* ListarVideoJuegos();
@@ -37,9 +47,8 @@ public:
     
 private:
     Servicio_Videojuego();
-    IDictionary* juegos;
+    ICollection* videojuegos;
     static Servicio_Videojuego* instance;
-
 };
 
 #endif /* SERVICIO_VIDEOJUEGO_H */

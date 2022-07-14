@@ -22,3 +22,8 @@ Historial::Historial(const Historial& orig) {
 Historial::~Historial() {
 }
 
+Historial::Historial(DtTime* tiempo, DtDate* fecha, MetodoPago pago) {
+    this->hora=tiempo;
+    this->fecha=fecha;
+    this->metodoPago=pago;
+}

@@ -57,6 +57,8 @@ public:
 	void SeleccionarCategoria(string);
         void ConfirmarPublicacion();
 	void CancelarPublicacion();
+        
+        void cargarDatosPrueba();
 /*
 
 

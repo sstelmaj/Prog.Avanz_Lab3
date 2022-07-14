@@ -12,11 +12,10 @@
  */
 
 #ifndef INTERFACE_DESARROLLADOR_H
-#include "Categoria.h"
-#include "ICollection.h"
-#include "Suscripcion.h"
 #define INTERFACE_DESARROLLADOR_H
 
+#include "ICollection.h"
+#include "Servicio_Videojuego.h"
 #include <string>
 using namespace std;
 
@@ -40,7 +39,7 @@ public:
         virtual void ConfirmarPublicacion()=0;
         virtual void CancelarPublicacion()=0;
         
-        
+        virtual void cargarDatosPrueba()=0;
         
     /*
 	virtual void IngresarDatosVideojuego(string,string);

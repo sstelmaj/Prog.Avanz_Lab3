@@ -25,6 +25,8 @@ public:
     int getDia();
     int getMes();
     int getAnio();
+    
+    void toString();
 private:
     int dia,mes,anio;
 };

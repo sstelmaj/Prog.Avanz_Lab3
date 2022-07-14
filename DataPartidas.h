@@ -23,15 +23,15 @@ using namespace std;
 
 class DataPartidas: public ICollectible{
 public:
-    DataPartidas(string,DtTime*,DtDate*, float);
-    string getID();
-    float getDuracion();
+    DataPartidas(int,DtTime*,DtDate*, DtDate*);
+    int getID();
+    DtDate* getDuracion();
     DtTime* getTiempo();
     DtDate* getFecha();
     virtual ~DataPartidas();
 private:
-    string ID;
-    float duracion;
+    int ID;
+    DtDate* duracion;
     // El DataParida tiene una hora y una fecha como un DataTime dia,mes,año,hora,minutos,segundos    
     DtTime* hora; 
     DtDate* fecha;

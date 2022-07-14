@@ -27,6 +27,7 @@ using namespace std;
 class Partida : public ICollectible  {
 public:
     Partida();
+    Partida(Videojuego*, DtDate*,DtTime*,int);
     Partida(const Partida& orig);
     virtual ~Partida();
     
@@ -34,30 +35,31 @@ public:
     bool getFinalizada();
     int getIdPartida();
     DtDate* getFecha();
-    string getHora();
-    DtTime* getDuracion();
-    void setVideojuego(Videojuego);
+    DtTime* getHora();
+    DtDate* getDuracion();
+    void setVideojuego(Videojuego*);
     void setFinalizada(bool);
     void setIdPartida(int);
-    void setFecha(DtDate);
-    void setHora(string);
-    void setDuracion(DtTime);
+    void setFecha(DtDate*);
+    void setHora(DtTime*);
+    void setDuracion(DtDate*);
 private:
     Videojuego* videojuego;
     bool finalizada;
     int idPartida;
     DtDate* fecha;
-    string hora;
-    DtTime* duracion;
+    DtTime* hora;
+    DtDate* duracion;
 };
 //------------------------------------------------------------------------------
 class Mutlijugador : public Partida {
 public:
     Mutlijugador();
+    Mutlijugador(Videojuego*, DtDate*,DtTime*,IDictionary*,bool,int, string);
     Mutlijugador(const Mutlijugador& orig);
     virtual ~Mutlijugador();
     
-    DtTime* getHoraSalida();
+    ICollection* getHoraSalida();
     bool getEnVivo();
     void setHoraSalida(DtTime);
     void setEnVivo(bool);
@@ -66,16 +68,24 @@ public:
     IDictionary* ListarInformacion();
     IDictionary* ListarComentarios();
     void EnviarComentario();
+    
+    IDictionary* getJugadores();
+    
+    string getHost();
+    void setHost(string host);
+
+    
 private:
-    DtTime* horaSalida;
+    ICollection* horaSalida;
     bool enVivo;
     IDictionary* jugadores; // El mutlijugador tiene una coleccion de jugadores que participan en la partida
     IDictionary* comentarios; // El mutlijugador tiene una coleccion de comentarios que hizo los jugadores
+    string host;
 };
 //------------------------------------------------------------------------------
 class Individual : public Partida {
 public:
-    Individual();
+    Individual(Videojuego*, DtDate*,DtTime*,int);
     Individual(const Individual& orig);
     virtual ~Individual();
     
@@ -85,4 +95,3 @@ private:
     bool partidaNueva;
 };
 #endif /* PARTIDA_H */
-

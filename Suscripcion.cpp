@@ -21,6 +21,16 @@ Suscripcion::Suscripcion(const Suscripcion& orig) {
 
 Suscripcion::~Suscripcion() {
 }
+
+
+Videojuego* Suscripcion::GetVideojuego(){
+    return videojuego;
+}
+
+void Suscripcion::SetVideojuego(Videojuego* videojuego){
+    this->videojuego = videojuego;
+}
+
 /*----------------------------VITALICEA--------------------------------------------*/
 
 Vitalicea::Vitalicea(){
@@ -51,8 +61,32 @@ Temporal::Temporal(){
 Temporal::Temporal(tiempoValidez _tiempo, int _costo){
     this->periodoValidez=_tiempo;
     this->costoMensual=_costo;
+    this->cancelada=false;
 }
 
 Temporal::~Temporal(){
 }
 
+bool Temporal::getCancelada(){
+    return this->cancelada;
+}
+
+void Temporal::setCancelada(bool c){
+    this->cancelada=c;
+}
+
+tiempoValidez Temporal::getPeriodoValidez(){
+    return this->periodoValidez;
+}
+
+void Temporal::setPeriodoValidez(tiempoValidez tiempo){
+    this->periodoValidez=tiempo;
+}
+
+int Temporal::getCostoMensual(){
+    return this->costoMensual;
+}
+
+void Temporal::setCostoMensual(int costo){
+    this->costoMensual=costo;
+}

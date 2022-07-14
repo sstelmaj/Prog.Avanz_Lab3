@@ -14,9 +14,8 @@
 #ifndef SUSCRIPCION_H
 #define SUSCRIPCION_H
 
-#include <string>
-#include "IDictionary.h"
-#include "ICollectible.h"
+
+#include "Videojuego.h"
 
 using namespace std;
 
@@ -35,8 +34,12 @@ public:
     Suscripcion(const Suscripcion& orig);
     virtual ~Suscripcion();
     
-    IDictionary* ObtenerNombreJuego();
+    Videojuego* GetVideojuego();
+    void SetVideojuego(Videojuego*);
+
+    
 private:
+    Videojuego* videojuego;
 };
 //------------------------------------------------------------------------------
 class Vitalicea : public Suscripcion {
