@@ -218,35 +218,44 @@ void ControladorD::cargarDatosPrueba(){
     Categoria* c = new Plataforma();
     c->setNombre("PC");
     c->setDescripcion("computadora");
+    this->categorias->add(c);
             
     c = new Plataforma();
     c->setNombre("PS4");
     c->setDescripcion("PlayStation4");
+    this->categorias->add(c);
             
     c = new Plataforma();
     c->setNombre("Xbox One");
     c->setDescripcion("Xbox One");
+    this->categorias->add(c);
     
     c = new Genero();
     c->setNombre("Deporte");
     c->setDescripcion("Deporte");
+    this->categorias->add(c);
     
     c = new Genero();
     c->setNombre("Supervivencia");
     c->setDescripcion("Supervivencia");
+    this->categorias->add(c);
     
     c = new Genero();
     c->setNombre("Estrategia");
     c->setDescripcion("Estrategia");
+    this->categorias->add(c);
     
     c = new Categoria();
     c->setNombre("Teen");
     c->setDescripcion("Su contenido está dirigido a jóvenes de 13 años en adelante");
+    this->categorias->add(c);
     
     c = new Categoria();
     c->setNombre("E");
-    c->setDescripcion("Su contenido está dirigido para todo público");   
+    c->setDescripcion("Su contenido está dirigido para todo público");
+    this->categorias->add(c);
 
+    
     
     ICollection * susc = new Lista();
     

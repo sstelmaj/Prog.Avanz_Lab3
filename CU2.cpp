@@ -13,7 +13,7 @@
 using namespace std ;
 
 
-void IniciarSesion(){
+bool IniciarSesion(){
     string mail,contrasenia;
     bool esta;
     int opcion;
@@ -38,14 +38,16 @@ void IniciarSesion(){
         }
         if(opcion == 2){
             fabrica->getInstance()->getInterfaceusuario()->CancelarSesion();
-            return;
+            return false;
         }
         
     }while(opcion == 1 );
     if(esta == true){
         cout<<"Sesion Iniciada!"<<endl;
+        return true;
     }
     else{
         cout<<"No se pudo iniciar sesion"<<endl;
+        return false;
     }
 }

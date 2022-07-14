@@ -37,6 +37,8 @@ public:
         virtual void agregarPartida(Partida*)=0;
         virtual Jugador* NicknameJugadoresUnirPartida(string)=0;
         
+        virtual Usuario* getUsu()=0;
+        
         virtual void cargarDatosPrueba()=0;
 /*
 	
