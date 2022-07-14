@@ -169,10 +169,12 @@ void ControladorD::SeleccionarCategoria(string _categoria){
     delete it;
 }
 
-void ControladorD::ConfirmarPublicacion(){
+void ControladorD::ConfirmarPublicacion(Usuario* _usu){
     Videojuego *nuevo=new Videojuego(this->Tnombre,this->Tdescripcion);
+    Desarrollador * pD = dynamic_cast<Desarrollador*> (_usu);
     nuevo->AgregarCategorias(this->Tcategorias);
     nuevo->AsociarSuscripcion(this->Tsuscripcion);
+    nuevo->setEmpresa(pD->getNombreCompania());
     InServicio->getInstance()->agregarVideoJuego(nuevo);
     
     /*
@@ -298,7 +300,7 @@ void ControladorD::cargarDatosPrueba(){
     J->AsociarSuscripcion(susc);
     delete(susc);
     susc=new Lista();
-    
+    J->setEmpresa("Ironhide Game Studio");
     J = new Videojuego("Fortnite", "Fortnite");
     
     S = new Temporal();
@@ -341,7 +343,7 @@ void ControladorD::cargarDatosPrueba(){
     delete(susc);
     susc=new Lista();
     
-    
+    J->setEmpresa("Epic Games");
     J = new Videojuego("Minecraft", "Minecraft");
     
     S = new Temporal();
@@ -382,7 +384,8 @@ void ControladorD::cargarDatosPrueba(){
     delete(susc);
     susc=new Lista();
     
-    J = new Videojuego("FIFA 21", "FIFA 21");
+    J->setEmpresa("Mojang Studios");
+    J = new Videojuego("FIFA21", "FIFA21");
     
     S = new Temporal();
     S->setCostoMensual(3);
@@ -424,6 +427,6 @@ void ControladorD::cargarDatosPrueba(){
     J->AsociarSuscripcion(susc);
     delete(susc);
     susc=new Lista();
-
+    J->setEmpresa("EA Sports");
     
 }

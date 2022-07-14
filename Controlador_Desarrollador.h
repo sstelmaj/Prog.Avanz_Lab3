@@ -55,7 +55,7 @@ public:
 	void SeleccionarCategoriaP(string);
         ICollection* ObtenerCategorias();
 	void SeleccionarCategoria(string);
-        void ConfirmarPublicacion();
+        void ConfirmarPublicacion(Usuario*);
 	void CancelarPublicacion();
         
         void cargarDatosPrueba();

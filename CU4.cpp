@@ -12,9 +12,11 @@ void PublicarVideoJuego(){
     string nombre,descripcion,cat;
     int opcion,costo,tipo,opc;
     tiempoValidez tiempo;
+    Usuario* usu;
     ICollection *categorias;
     IIterator * it;
     
+    usu=fabrica->getInstance()->getInterfaceusuario()->getUsu();
     cout<<"Ingrese Nombre del Juego a Publicar: ";
     cin>>nombre;
     cout<<"Ingrese Descripcion del Juego a Publicar: ";
@@ -85,7 +87,7 @@ void PublicarVideoJuego(){
     cin>>opcion;
     switch(opcion){
         case 1:
-            fabrica->getInterfaceD()->ConfirmarPublicacion();
+            fabrica->getInterfaceD()->ConfirmarPublicacion(usu);
             break;
         case 2:
             fabrica->getInterfaceD()->CancelarPublicacion();

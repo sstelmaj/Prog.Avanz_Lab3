@@ -36,7 +36,7 @@ public:
         virtual void SeleccionarCategoriaP(string)=0;
         virtual ICollection* ObtenerCategorias()=0;
         virtual void SeleccionarCategoria(string)=0;
-        virtual void ConfirmarPublicacion()=0;
+        virtual void ConfirmarPublicacion(Usuario*)=0;
         virtual void CancelarPublicacion()=0;
         
         virtual void cargarDatosPrueba()=0;
